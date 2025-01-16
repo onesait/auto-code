@@ -1,0 +1,85 @@
+:root {
+  color-scheme: light only;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body, button, input, select, optgroup, textarea {
+  @include ff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: $dark;
+}
+
+a {
+  transition: .4s ease;
+  text-decoration: none;
+  color: red; // TODO: change
+
+  &:visited {
+    color: red; // TODO: change
+  }
+
+  &:hover {
+    color: red; // TODO: change
+  }
+
+  &:active {
+    color: red; // TODO: change
+  }
+}
+
+h1,
+h2,
+.main-title,
+.section-title {
+  margin: 0 0 24px;
+  @include sff;
+  font-weight: 700;
+}
+
+h1,
+.main-title {
+  font-size: 90px;
+  line-height: 111%;
+}
+
+h2,
+.section-title {
+  font-size: 56px;
+  line-height: 114%;
+}
+
+button,
+.button {
+  transition: .4s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid $white;
+  border-radius: 8px;
+  padding: 15px 27px;
+  background-color: transparent;
+  font-weight: 700;
+  color: $white;
+
+  &:hover {
+    background-color: $white;
+    color: $lviolet;
+  }
+
+  &--violet {
+    border-color: $lviolet;
+    color: $lviolet;
+
+    &:hover {
+      background-color: $lviolet;
+      color: $white;
+    }
+  }
+}

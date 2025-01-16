@@ -1,0 +1,44 @@
+.site-header {
+  padding: 24px 0;
+  background: linear-gradient(90deg, #6a5aff 40%, #a74ad1 100%); // TODO: remove
+
+  &__center {
+    display: flex;
+    justify-content: flex-end;
+    gap: 48px;
+  }
+
+  &__messengers {
+    display: flex;
+    gap: 24px;
+
+    &-item {
+      font-weight: 700;
+      color: $white;
+    }
+  }
+
+  &__phone {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: $white;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background: url('/img/global/phone-20-white.svg');
+    }
+
+    span {
+      font-weight: 700;
+      @include fs-20;
+    }
+  }
+
+  &__discuss-btn {
+    margin-left: auto;
+  }
+}

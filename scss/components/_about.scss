@@ -1,0 +1,58 @@
+.about {
+  &__left {
+    box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 48px;
+  }
+
+  &__title:first-letter {
+    color: $violet;
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__team {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 8px;
+    height: 100%;
+    padding: 48px;
+    background-color: $ldark;
+  }
+
+  &__team-text {
+    margin-bottom: 24px;
+    @include fs-20;
+    color: $white;
+  }
+
+  &__team-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    border-radius: 8px;
+    padding: 16px 24px;
+    backdrop-filter: blur(25px);
+    background: rgba(255, 255, 255, 0.15);
+
+    span {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: $white;
+
+      &::after {
+        content: '';
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background: url('/img/global/arrow-right-20-white.svg');
+      }
+    }
+  }
+}
