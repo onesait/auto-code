@@ -133,7 +133,7 @@ button--violet:hover,
   display: inline-block;
   width: 20px;
   height: 20px;
-  background: url("/img/global/phone-20-white.svg");
+  background: url("../img/global/phone-20-white.svg");
 }
 .site-header__phone span {
   font-weight: 700;
@@ -163,7 +163,7 @@ button--violet:hover,
   left: 0;
   width: 100%;
   height: 82px;
-  background: url("/img/global/footer-text.svg") center/contain no-repeat;
+  background: url("../img/global/footer-text.svg") center/contain no-repeat;
 }
 .site-footer__logo-link {
   display: inline-block;
@@ -223,7 +223,7 @@ button--violet:hover,
   display: inline-block;
   width: 20px;
   height: 20px;
-  background: url("/img/global/phone-20-dark.svg");
+  background: url("../img/global/phone-20-dark.svg");
 }
 .site-footer__email {
   display: inline-flex;
@@ -237,7 +237,7 @@ button--violet:hover,
   display: inline-block;
   width: 20px;
   height: 20px;
-  background: url("/img/global/email-20-lviolet.svg");
+  background: url("../img/global/email-20-lviolet.svg");
 }
 .site-footer__address {
   display: inline-flex;
@@ -251,7 +251,7 @@ button--violet:hover,
   min-width: 20px;
   width: 20px;
   height: 20px;
-  background: url("/img/global/map-20-dark.svg");
+  background: url("../img/global/map-20-dark.svg");
 }
 .site-footer__messengers {
   font-weight: 500;
@@ -314,5 +314,5 @@ button--violet:hover,
   display: inline-block;
   width: 20px;
   height: 20px;
-  background: url("/img/global/arrow-right-20-white.svg");
+  background: url("../img/global/arrow-right-20-white.svg");
 }
