@@ -371,9 +371,15 @@ button--violet:hover,
   gap: 8px;
   border: 3px solid #6924ff;
   border-radius: 8px;
+  min-width: 196px;
   padding: 15px;
   background-color: #6924ff;
   font-weight: 700;
+  color: #fff;
+}
+.plug-page__tg-btn:hover {
+  border-color: #fff;
+  background-color: transparent;
   color: #fff;
 }
 .plug-page__tg-btn::after {
@@ -389,8 +395,14 @@ button--violet:hover,
   gap: 8px;
   border: 3px solid #fff;
   border-radius: 8px;
+  min-width: 196px;
   padding: 15px;
   font-weight: 700;
+  color: #fff;
+}
+.plug-page__youtube-btn:hover {
+  border-color: #6924ff;
+  background-color: #6924ff;
   color: #fff;
 }
 .plug-page__youtube-btn::after {
@@ -424,12 +436,22 @@ button--violet:hover,
   line-height: 125%;
   color: #fff;
 }
+.plug-page__email:hover, .plug-page__phone:hover {
+  color: #fff;
+}
+.plug-page__email:hover::before, .plug-page__phone:hover::before {
+  right: -8px;
+  left: -8px;
+  width: calc(100% + 16px);
+  height: 32px;
+}
 .plug-page__email::before, .plug-page__phone::before {
   content: "";
   position: absolute;
   z-index: -1;
   bottom: -2px;
   left: 0;
+  transition: 0.4s ease;
   width: 100%;
   height: 15px;
   background-color: #8073ff;
@@ -456,6 +478,7 @@ button--violet:hover,
   }
   .plug-page__btns {
     flex-direction: column;
+    gap: 16px;
     margin-bottom: 24px;
     width: 100%;
   }

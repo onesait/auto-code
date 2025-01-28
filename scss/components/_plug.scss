@@ -56,10 +56,17 @@
     gap: 8px;
     border: 3px solid $violet;
     border-radius: 8px;
+    min-width: 196px;
     padding: 15px;
     background-color: $violet;
     font-weight: 700;
     color: $white;
+
+    &:hover {
+      border-color: $white;
+      background-color: transparent;
+      color: $white;
+    }
 
     &::after {
       content: "";
@@ -76,9 +83,16 @@
     gap: 8px;
     border: 3px solid $white;
     border-radius: 8px;
+    min-width: 196px;
     padding: 15px;
     font-weight: 700;
     color: $white;
+
+    &:hover {
+      border-color: $violet;
+      background-color: $violet;
+      color: $white;
+    }
 
     &::after {
       content: "";
@@ -116,12 +130,24 @@
     line-height: 125%;
     color: $white;
 
+    &:hover {
+      color: $white;
+
+      &::before {
+        right: -8px;
+        left: -8px;
+        width: calc(100% + 16px);
+        height: 32px;
+      }
+    }
+
     &::before {
       content: '';
       position: absolute;
       z-index: -1;
       bottom: -2px;
       left: 0;
+      transition: .4s ease;
       width: 100%;
       height: 15px;
       background-color: $lviolet;
@@ -158,6 +184,7 @@
 
     &__btns {
       flex-direction: column;
+      gap: 16px;
       margin-bottom: 24px;
       width: 100%;
     }
