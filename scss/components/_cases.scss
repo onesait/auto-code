@@ -1,0 +1,39 @@
+.cases {
+  &__link {
+    margin: 0 0 48px auto;
+  }
+
+  &__item-wrapper {
+    box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 100%;
+    padding: 32px;
+  }
+
+  &__item-title {
+    margin-bottom: 16px;
+    font-weight: 700;
+    @include fs-24;
+  }
+
+  &__item-text {
+    margin-bottom: 24px;
+  }
+
+  &__item-img-wrapper {
+    border-radius: 8px;
+    padding: 32px;
+    background-color: $lgray;
+  }
+
+  &__item-img {
+    border-radius: 8px;
+  }
+
+  &__controls {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin: 24px auto 0;
+  }
+}

@@ -1,0 +1,33 @@
+.advantages {
+  &__text {
+    position: relative;
+    margin: auto;
+    max-width: 1190px;
+    @include sff;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 124%;
+    text-align: center;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      width: 177px;
+      height: 177px;
+    }
+
+    &::before {
+      top: -48px;
+      left: -76px;
+      background: url('../img/home-page/quote-up.svg') center/contain no-repeat;
+    }
+
+    &::after {
+      right: -78px;
+      bottom: -69px;
+      background: url('../img/home-page/quote-down.svg') center/contain no-repeat;
+    }
+  }
+}
