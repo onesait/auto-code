@@ -333,7 +333,7 @@ button--violet:hover,
   bottom: 0;
   left: 0;
   width: 100%;
-  background: url("../img/plug-page/background-k.svg") center/cover no-repeat;
+  background: url("../img/plug-page/background-k.png") center/cover no-repeat;
   animation-name: moving;
   animation-duration: 10s;
   animation-timing-function: ease-out;
