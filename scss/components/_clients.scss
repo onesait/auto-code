@@ -1,0 +1,62 @@
+.clients {
+  &__content {
+    box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 96px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 48px;
+    margin: 0;
+    padding-left: 7vw;
+    list-style-type: none;
+  }
+
+  &__item {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    width: calc(50% - 24px);
+    color: $gray;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      width: 36px;
+      height: 36px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      transform: translateY(-50%);
+      width: 16px;
+      height: 16px;
+      background: url('../img/global/check-16-lviolet.svg');
+    }
+  }
+
+  &__form-wrapper {
+    border-radius: 8px;
+    height: 100%;
+    padding: 48px;
+    background-color: $violet;
+  }
+
+  &__form-text {
+    margin-bottom: 24px;
+    color: $white;
+  }
+
+  &__form-policy {
+    @include fs-12;
+    color: $white;
+  }
+}

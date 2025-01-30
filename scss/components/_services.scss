@@ -1,0 +1,116 @@
+.services {
+  &__link {
+    margin: 0 0 48px auto;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 24px;
+  }
+
+  &__item {
+    grid-column: span 4;
+
+    &:nth-child(1) {
+      grid-row: span 3;
+
+      .services__item-wrapper {
+        border-color: $ldark;
+        padding: 48px 96px 72px 48px;
+        background-color: $ldark;
+
+        &::before {
+          content: '';
+          position: absolute;
+          right: 16px;
+          bottom: 16px;
+          width: 58px;
+          height: 55px;
+          background: url('../img/home-page/services-mobile-development.png');
+        }
+      }
+
+      .services__item-title {
+        color: $white;
+      }
+    }
+
+    &:nth-child(2) {
+      grid-row: span 2;
+
+      .services__item-title {
+        margin-bottom: 16px;
+      }
+    }
+
+    &:nth-child(3) {
+      grid-row: span 1;
+
+      .services__item-wrapper {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+
+    &:nth-child(4) {
+      grid-row: span 2;
+
+      .services__item-wrapper {
+        &::before {
+          content: '';
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          width: 227px;
+          height: 144px;
+          background: url('../img/home-page/services-development.svg');
+        }
+      }
+
+      .services__item-title {
+        margin-bottom: 16px;
+      }
+    }
+
+    &:nth-child(5) {
+      grid-row: span 1;
+
+      .services__item-wrapper {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  &__item-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid $lgray;
+    border-radius: 8px;
+    height: 100%;
+    padding: 32px;
+  }
+
+  &__item-category {
+    margin-bottom: 16px;
+    font-weight: 700;
+    color: $gray;
+  }
+
+  &__item-title {
+    font-weight: 700;
+    @include fs-32;
+    color: $dark;
+  }
+
+  &__item-description {
+    margin: 8px 0 24px;
+    font-weight: 500;
+    @include fs-14;
+    color: $gray;
+  }
+}

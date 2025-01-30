@@ -30,6 +30,7 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
+  font-weight: 700;
   color: $lviolet;
 
   &::after {
@@ -38,6 +39,29 @@
     width: 20px;
     height: 20px;
     background: url('../img/global/arrow-right-20-lviolet.svg') center/contain no-repeat;
+  }
+
+  &--small {
+    &::after {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  &--dark {
+    color: $dark;
+
+    &::after {
+      background: url('../img/global/arrow-right-16-dark.svg') center/contain no-repeat;
+    }
+  }
+
+  &--white {
+    color: $white;
+
+    &::after {
+      background: url('../img/global/arrow-right-16-white.svg') center/contain no-repeat;
+    }
   }
 }
 

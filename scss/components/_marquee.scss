@@ -1,0 +1,32 @@
+.marquee {
+  padding: 32px 0;
+  background-color: $ldark;
+
+  &__wrapper {
+    display: flex;
+    gap: 16px;
+    overflow: hidden;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    @include sff;
+    font-weight: 700;
+    @include fs-56;
+    white-space: nowrap;
+    color: $lviolet;
+    animation: marquee 20s linear infinite;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0)
+  }
+
+  100% {
+    transform: translateX(-100%)
+  }
+}
