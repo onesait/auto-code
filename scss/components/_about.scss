@@ -25,8 +25,8 @@
   }
 
   &__team-text {
-    margin-bottom: 24px;
     @include fs-20;
+    margin-bottom: 24px;
     color: $white;
   }
 
@@ -47,12 +47,11 @@
       color: $white;
 
       &::after {
-        content: '';
-        display: inline-block;
+        content: "";
         min-width: 20px;
         width: 20px;
         height: 20px;
-        background: url('../img/global/arrow-right-20-white.svg');
+        background: url("../img/global/arrow-right-20-white.svg");
       }
     }
   }

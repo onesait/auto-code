@@ -13,7 +13,7 @@
     gap: 24px;
     margin: 0;
     padding: 0;
-    list-style-type: none;
+    list-style: none;
   }
 
   &__item {
@@ -58,17 +58,17 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      transition: .4s ease;
+      transition: background 0.4s ease;
       width: 2px;
       height: 8px;
-      background: url('../img/global/exclamation-point-2-lviolet.svg');
+      background: url("../img/global/exclamation-point-2-lviolet.svg");
     }
 
     &:hover {
       background-color: $lviolet;
 
       &::before {
-        background: url('../img/global/exclamation-point-2-white.svg');
+        background: url("../img/global/exclamation-point-2-white.svg");
       }
 
       .awards__item-hidden-content {
@@ -83,15 +83,15 @@
     z-index: 2;
     bottom: calc(100% + 6px);
     right: 0;
-    transition: .4s ease;
     display: flex;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s ease;
     box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     width: 258px;
     padding: 16px;
     background-color: $white;
-    opacity: 0;
-    visibility: hidden;
   }
 
   &__item-certificate {

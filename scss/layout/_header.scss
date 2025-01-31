@@ -25,16 +25,15 @@
     color: $white;
 
     &::before {
-      content: '';
-      display: inline-block;
+      content: "";
       width: 20px;
       height: 20px;
-      background: url('../img/global/phone-20-white.svg');
+      background: url("../img/global/phone-20-white.svg");
     }
 
     span {
-      font-weight: 700;
       @include fs-20;
+      font-weight: 700;
     }
   }
 

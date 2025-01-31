@@ -34,11 +34,10 @@
   color: $lviolet;
 
   &::after {
-    content: '';
-    display: inline-block;
+    content: "";
     width: 20px;
     height: 20px;
-    background: url('../img/global/arrow-right-20-lviolet.svg') center/contain no-repeat;
+    background: url("../img/global/arrow-right-20-lviolet.svg") center/contain no-repeat;
   }
 
   &--small {
@@ -52,7 +51,7 @@
     color: $dark;
 
     &::after {
-      background: url('../img/global/arrow-right-16-dark.svg') center/contain no-repeat;
+      background: url("../img/global/arrow-right-16-dark.svg") center/contain no-repeat;
     }
   }
 
@@ -60,7 +59,7 @@
     color: $white;
 
     &::after {
-      background: url('../img/global/arrow-right-16-white.svg') center/contain no-repeat;
+      background: url("../img/global/arrow-right-16-white.svg") center/contain no-repeat;
     }
   }
 }

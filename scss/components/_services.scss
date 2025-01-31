@@ -27,7 +27,7 @@
           bottom: 16px;
           width: 58px;
           height: 55px;
-          background: url('../img/home-page/services-mobile-development.png');
+          background: url("../img/home-page/services-mobile-development.png");
         }
       }
 
@@ -59,13 +59,13 @@
 
       .services__item-wrapper {
         &::before {
-          content: '';
+          content: "";
           position: absolute;
           right: 0;
           bottom: 0;
           width: 227px;
           height: 144px;
-          background: url('../img/home-page/services-development.svg');
+          background: url("../img/home-page/services-development.svg");
         }
       }
 
@@ -102,15 +102,15 @@
   }
 
   &__item-title {
-    font-weight: 700;
     @include fs-32;
+    font-weight: 700;
     color: $dark;
   }
 
   &__item-description {
+    @include fs-14;
     margin: 8px 0 24px;
     font-weight: 500;
-    @include fs-14;
     color: $gray;
   }
 }

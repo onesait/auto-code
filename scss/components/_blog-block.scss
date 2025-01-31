@@ -2,4 +2,52 @@
   &__link {
     margin: 0 0 48px auto;
   }
+
+  &__item-wrapper {
+    display: flex;
+    flex-direction: column;
+    transition: .4s ease;
+    border: 3px solid $lgray;
+    border-radius: 8px;
+    padding: 48px;
+
+    &:hover {
+      box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.1);
+      border-color: $white;
+    }
+  }
+
+  &__item-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 48px;
+  }
+
+  &__item-category {
+    @include fs-12;
+    border-radius: 8px;
+    padding: 8px 16px;
+    background-color: $lgray;
+    color: $lviolet;
+  }
+
+  &__item-resource-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__item-resource-text {
+    font-weight: 700;
+    color: $dark;
+  }
+
+  &__item-title {
+    @include fs-24;
+    margin-bottom: 24px;
+    font-weight: 700;
+    color: $dark;
+  }
 }

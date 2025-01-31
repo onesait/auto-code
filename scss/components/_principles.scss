@@ -10,9 +10,9 @@
   }
 
   &__item-title {
+    @include fs-24;
     margin-bottom: 8px;
     font-weight: 700;
-    @include fs-24;
     text-align: center;
     color: $white;
   }

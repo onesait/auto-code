@@ -9,15 +9,15 @@
   }
 
   &__item {
+    @include sff;
+    @include fs-56;
     display: flex;
     align-items: center;
     gap: 16px;
-    @include sff;
+    animation: marquee 20s linear infinite;
     font-weight: 700;
-    @include fs-56;
     white-space: nowrap;
     color: $lviolet;
-    animation: marquee 20s linear infinite;
   }
 }
 
