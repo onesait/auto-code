@@ -52,6 +52,10 @@
     font-weight: 500;
     color: $dark;
 
+    &:hover {
+      color: $lviolet;
+    }
+
     &--main-menu {
       @include fs-16;
       font-weight: 700;
@@ -117,9 +121,14 @@
     color: $lviolet;
   }
 
-  &__messengers-item {
+  &__messenger {
     @include fs-16;
     font-weight: 700;
     color: $lviolet;
+
+    &:hover {
+      text-decoration: underline;
+      color: $ldark;
+    }
   }
 }

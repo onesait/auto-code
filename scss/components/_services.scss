@@ -89,10 +89,24 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    transition: .4s ease;
     border: 3px solid $lgray;
     border-radius: 8px;
     height: 100%;
     padding: 32px;
+
+    &:hover {
+      box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.1);
+      border-color: $white;
+
+      .services__item-link {
+        color: $lviolet;
+
+        &::after {
+          background: url("../img/global/arrow-right-20-violet.svg") center/contain no-repeat;
+        }
+      }
+    }
   }
 
   &__item-category {

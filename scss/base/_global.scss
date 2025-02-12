@@ -19,18 +19,18 @@ body, button, input, select, optgroup, textarea {
 a {
   transition: color 0.4s ease;
   text-decoration: none;
-  color: red; // TODO: change
+  color: $lviolet;
 
   &:visited {
-    color: red; // TODO: change
+    color: $lviolet;
   }
 
   &:hover {
-    color: red; // TODO: change
+    color: $violet;
   }
 
   &:active {
-    color: red; // TODO: change
+    color: $violet;
   }
 }
 
@@ -87,5 +87,89 @@ button,
       background-color: $lviolet;
       color: $white;
     }
+  }
+
+  &--white {
+    background-color: $white;
+    color: $lviolet;
+
+    &:hover {
+      border-color: $ldark;
+      background-color: $ldark;
+      color: $white;
+    }
+  }
+}
+
+input {
+  border: 1px solid $white;
+  border-radius: 8px;
+  padding: 16px 23px;
+  line-height: 162%;
+  color: $gray;
+
+  &:focus {
+    border-color: $violet;
+    color: $dark;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:invalid {
+    border-color: #ff4949;
+    color: #ff4949;
+  }
+
+  &::placeholder {
+    color: $gray;
+  }
+
+  &.secondary {
+    border: 3px solid $lgray;
+    padding: 15px 21px;
+    background-color: $white;
+    line-height: 150%;
+
+    &:focus {
+      border-color: $white;
+      background-color: $white;
+    }
+
+    &:invalid {
+      border-color: #ff4949;
+      color: #ff4949;
+    }
+
+    &::placeholder {
+      color: $white;
+    }
+
+    &:placeholder-shown {
+      background-color: transparent;
+    }
+  }
+}
+
+textarea {
+  border: 1px solid $white;
+  border-radius: 8px;
+  height: 115px;
+  padding: 23px;
+  line-height: 162%;
+  color: $gray;
+
+  &:focus {
+    border-color: $violet;
+    color: $dark;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &::placeholder {
+    color: $gray;
   }
 }

@@ -1,0 +1,96 @@
+.menu {
+  &__wrapper {
+    padding: 40px 0;
+  }
+
+  &__logo-link {
+    display: block;
+    margin-bottom: 48px;
+  }
+
+  &__title {
+    @include sff;
+    @include fs-30;
+    margin-bottom: 24px;
+    font-weight: 700;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    &--main-menu {
+      gap: 24px;
+    }
+  }
+
+  &__item-link {
+    @include fs-20;
+    font-weight: 700;
+    color: $dark;
+
+    &:hover {
+      color: $lviolet;
+    }
+
+    &--main-menu {
+      @include sff;
+      @include fs-30;
+    }
+  }
+
+  &__contacts-title {
+    @include sff;
+    @include fs-32;
+    margin-bottom: 24px;
+    font-weight: 700;
+  }
+
+  &__messengers {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5vw;
+    border-radius: 8px;
+    width: 100%;
+    padding: 24px;
+    background-color: $lviolet;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 1px;
+      height: 32px;
+      background-color: $white;
+    }
+  }
+
+  &__messengers-title {
+    @include fs-24;
+    font-weight: 700;
+    color: $white;
+  }
+
+  &__messengers-list {
+    display: flex;
+    gap: 24px;
+  }
+
+  &__messenger {
+    font-weight: 700;
+    color: $white;
+
+    &:hover {
+      text-decoration: underline;
+      color: $white;
+    }
+  }
+}

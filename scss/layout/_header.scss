@@ -1,4 +1,7 @@
 .site-header {
+  position: sticky;
+  z-index: 9;
+  top: 0;
   padding: 24px 0;
   background: linear-gradient(90deg, #6a5aff 40%, #a74ad1 100%); // TODO: remove
 
@@ -39,5 +42,40 @@
 
   &__discuss-btn {
     margin-left: auto;
+  }
+
+  &__menu-btn {
+    @include sff;
+    @include fs-20;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.1);
+    border-color: transparent;
+    border-radius: 0;
+    width: 92px;
+    height: 697px;
+
+    backdrop-filter: blur(30px);
+    background: rgba(255, 255, 255, 0.15);
+
+    font-weight: 800;
+    text-transform: uppercase;
+    color: $white;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.15);
+      color: $white;
+
+      span {
+        letter-spacing: 0.24em;
+      }
+    }
+
+    span {
+      transform: rotate(-90deg);
+      transition: .4s ease;
+    }
   }
 }

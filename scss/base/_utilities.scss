@@ -30,14 +30,24 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
+  transition: .4s ease;
   font-weight: 700;
   color: $lviolet;
 
   &::after {
     content: "";
+    transition: .4s ease;
     width: 20px;
     height: 20px;
     background: url("../img/global/arrow-right-20-lviolet.svg") center/contain no-repeat;
+  }
+
+  &:hover {
+    color: $violet;
+
+    &::after {
+      background: url("../img/global/arrow-right-20-violet.svg") center/contain no-repeat;
+    }
   }
 
   &--small {
