@@ -2,46 +2,119 @@
   position: sticky;
   z-index: 9;
   top: 0;
+  transition: .4s ease;
   padding: 24px 0;
-  background: linear-gradient(90deg, #6a5aff 40%, #a74ad1 100%); // TODO: remove
+  background: linear-gradient(90deg, #6a5aff 40%, #a74ad1 100%);
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+  }
+
+  &__logo-mobile {
+    display: none;
+  }
+
+  &__scroll-menu-btn {
+    @include sff;
+    @include fs-20;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s ease;
+    border: 0;
+    padding: 0;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: $dark;
+
+    &:hover {
+      background-color: transparent;
+      color: $lviolet;
+    }
+  }
 
   &__center {
     display: flex;
     justify-content: flex-end;
     gap: 48px;
+    margin: 0 48px 0 auto;
+  }
+
+  &__search-btn {
+    border: 0;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    background: url("../img/global/search-24-white.svg");
+
+    &:hover {
+      background: url("../img/global/search-24-white.svg");
+    }
+
+    &.active {
+      background: url("../img/global/close-24-white.svg");
+
+      &:hover {
+        background: url("../img/global/close-24-white.svg");
+      }
+    }
   }
 
   &__messengers {
     display: flex;
     gap: 24px;
+  }
 
-    &-item {
-      font-weight: 700;
+  &__messenger {
+    position: relative;
+    font-weight: 700;
+    color: $white;
+
+    &:hover {
+      text-decoration: underline;
       color: $white;
+    }
+  }
+
+  &__messenger-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s ease;
+    width: 100%;
+    height: 100%;
+
+    &--hover {
+      opacity: 0;
+      visibility: hidden;
     }
   }
 
   &__phone {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
+    font-weight: 700;
     color: $white;
 
     &::before {
       content: "";
+      margin-right: 8px;
       width: 20px;
       height: 20px;
-      background: url("../img/global/phone-20-white.svg");
+      background: url("../img/global/phone-20-white.svg") center/contain no-repeat;
     }
 
     span {
       @include fs-20;
-      font-weight: 700;
     }
-  }
 
-  &__discuss-btn {
-    margin-left: auto;
+    &:hover {
+      text-decoration: underline;
+      color: $white;
+    }
   }
 
   &__menu-btn {
@@ -51,11 +124,12 @@
     position: absolute;
     top: 0;
     left: 0;
+    transition: .4s ease;
     box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.1);
     border-color: transparent;
     border-radius: 0;
     width: 92px;
-    height: 697px;
+    height: 100vh;
 
     backdrop-filter: blur(30px);
     background: rgba(255, 255, 255, 0.15);
@@ -76,6 +150,279 @@
     span {
       transform: rotate(-90deg);
       transition: .4s ease;
+    }
+  }
+
+  &__search-wrapper {
+    position: absolute;
+    z-index: 9;
+    top: 100%;
+    left: 0;
+    display: none;
+    width: 100%;
+
+    &.active {
+      display: flex;
+    }
+  }
+
+  &__search-form {
+    display: flex;
+    gap: 24px;
+    box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 16px 24px;
+    background-color: $white;
+  }
+
+  &__search-label {
+    position: relative;
+    display: flex;
+    flex: 1;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 24px;
+      transform: translateY(-50%);
+      width: 16px;
+      height: 16px;
+      background: url("../img/global/search-16-gray.svg");
+    }
+  }
+
+  &__search-input {
+    flex: 1;
+    border: 3px solid $lgray;
+    padding: 15px 21px 15px 45px;
+  }
+
+  &.scrolled {
+    background: $white;
+
+    .site-header {
+      &__logo {
+        path {
+          &:nth-of-type(1),
+          &:nth-of-type(2),
+          &:nth-of-type(3) {
+            fill: $dark;
+          }
+        }
+      }
+
+      &__logo-mobile {
+        path:first-child {
+          fill: $dark;
+        }
+      }
+
+      &__scroll-menu-btn {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      &__search-btn {
+        background: url("../img/global/search-24-lviolet.svg");
+
+        &:hover {
+          background: url("../img/global/search-24-lviolet.svg");
+        }
+
+        &.active {
+          background: url("../img/global/close-24-lviolet.svg");
+
+          &:hover {
+            background: url("../img/global/close-24-lviolet.svg");
+          }
+        }
+      }
+
+      &__messenger {
+        color: $dark;
+      }
+
+      &__phone {
+        color: $dark;
+
+        &::before {
+          background: url("../img/global/phone-20-dark.svg") center/contain no-repeat;
+        }
+      }
+
+      &__discuss-btn {
+        border-color: $lviolet;
+        color: $lviolet;
+
+        &:hover {
+          background-color: $lviolet;
+          color: $white;
+        }
+      }
+
+      &__menu-btn {
+        opacity: 0;
+        visibility: visible;
+      }
+    }
+  }
+}
+
+@media (max-width: 1874px) {
+  .site-header {
+    &__wrapper {
+      transition: .4s ease;
+      padding-left: 8.333333%;
+    }
+
+    &.scrolled {
+      .site-header {
+        &__wrapper {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1399px) {
+  .site-header {
+    &__wrapper {
+      gap: 36px;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .site-header {
+    &__wrapper {
+      gap: 24px;
+    }
+
+    &__center {
+      gap: 24px;
+      margin: 0 0 0 auto;
+    }
+
+    &__messengers {
+      gap: 16px;
+    }
+
+    &__messenger {
+      width: 24px;
+      height: 24px;
+      font-size: 0;
+
+      &:hover {
+        .site-header__messenger-img {
+          opacity: 0;
+          visibility: hidden;
+
+          &--hover {
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+      }
+    }
+
+    &__messenger-img {
+      opacity: 1;
+      visibility: visible;
+
+      &--hover {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+
+    &__menu-btn {
+      width: 84px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .site-header {
+    &__wrapper {
+      padding-left: 0;
+    }
+
+    &__scroll-menu-btn {
+      order: 3;
+      opacity: 1;
+      visibility: visible;
+      margin-left: 24px;
+      color: $white;
+
+      &:hover {
+        color: $dark;
+      }
+    }
+
+    &__discuss-btn {
+      display: none;
+    }
+
+    &__menu-btn {
+      display: none;
+    }
+
+    &.scrolled {
+      .site-header__scroll-menu-btn {
+        color: $dark;
+
+        &:hover {
+          color: $lviolet;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .site-header {
+    padding: 16px 0;
+
+    &__logo {
+      display: none;
+    }
+
+    &__logo-mobile {
+      display: block;
+    }
+
+    &__scroll-menu-btn {
+      margin-left: 0;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .site-header {
+    &__center {
+      gap: 16px;
+    }
+
+    &__search-btn {
+      display: none;
+    }
+
+    &__messenger {
+      width: 20px;
+      height: 20px;
+    }
+
+    &__phone {
+      &::before {
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+    &__scroll-menu-btn {
+      width: auto;
     }
   }
 }

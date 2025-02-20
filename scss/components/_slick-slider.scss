@@ -37,11 +37,31 @@
     background-color: $gray;
     font-size: 0;
   }
+
+  .main-screen & {
+    li.slick-active button {
+      background-color: $white;
+    }
+
+    button {
+      box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.1);
+      background-color: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(30px);
+    }
+  }
 }
 
 .slick-arrow {
   border: none;
   padding: 0;
+
+  &:hover {
+    background-color: transparent;
+
+    path {
+      fill: $white;
+    }
+  }
 
   &.slick-prev {
     order: 1;
@@ -49,5 +69,9 @@
 
   &.slick-next {
     order: 3;
+  }
+
+  path {
+    transition: .4s ease;
   }
 }

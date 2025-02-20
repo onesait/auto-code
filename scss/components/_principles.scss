@@ -23,3 +23,21 @@
     color: $white;
   }
 }
+
+@media (max-width: 575px) {
+  .principles {
+    &__item-icon {
+      margin-bottom: 8px;
+      width: 60px;
+      height: 60px;
+    }
+
+    &__item-title {
+      margin-bottom: 0;
+    }
+
+    &__item-text {
+      display: none;
+    }
+  }
+}

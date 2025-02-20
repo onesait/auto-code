@@ -173,3 +173,91 @@ textarea {
     color: $gray;
   }
 }
+
+@media (max-width: 1874px) {
+  h1,
+  .main-title {
+    font-size: 70px;
+    line-height: 114%;
+  }
+
+  h3 {
+    font-size: 24px;
+    line-height: 150%;
+  }
+}
+
+@media (max-width: 1399px) {
+  h1,
+  .main-title {
+    font-size: 54px;
+    line-height: 119%;
+  }
+
+  h2,
+  .section-title {
+    font-size: 48px;
+    line-height: 117%;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1199px) {
+  h1,
+  .main-title {
+    font-size: 48px;
+    line-height: 117%;
+  }
+
+  h2,
+  .section-title {
+    font-size: 36px;
+    line-height: 133%;
+  }
+}
+
+@media (max-width: 991px) {
+  h1,
+  .main-title {
+    font-size: 40px;
+    line-height: 130%;
+  }
+
+  h2,
+  .section-title {
+    font-size: 32px;
+    line-height: 131%;
+  }
+}
+
+@media (max-width: 575px) {
+  body {
+    font-size: 14px;
+    line-height: 143%;
+  }
+
+  h1,
+  .main-title {
+    font-size: 30px;
+    line-height: 133%;
+  }
+
+  h2,
+  .section-title {
+    font-size: 24px;
+    line-height: 150%;
+  }
+
+  h3 {
+    font-size: 18px;
+    line-height: 167%;
+  }
+
+  button,
+  .button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,169 @@
+.main-screen {
+  overflow: hidden;
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__item-wrapper {
+    padding-bottom: 225px;
+    background: linear-gradient(90deg, #6a5aff 40%, #a74ad1 100%);
+  }
+
+  &__item-content {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    border-bottom: 3px solid $lviolet;
+  }
+
+  &__item-title {
+    margin-bottom: 0;
+    color: $white;
+  }
+
+  &__bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  &__bottom-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    padding-bottom: 96px;
+  }
+
+  &__services {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 16px 72px;
+    margin: 0;
+    max-height: 80px;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__service-link {
+    @include fs-24;
+    font-weight: 700;
+    color: $white;
+
+    &:hover {
+      text-decoration: underline;
+      color: $white;
+    }
+  }
+
+  &__controls {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin: auto 0 0 auto;
+  }
+}
+
+@media (max-width: 1874px) {
+  .main-screen {
+    &__item-wrapper {
+      padding-left: calc(8.333333% + 12px);
+    }
+
+    &__item-img {
+      max-width: 416px;
+    }
+
+    &__bottom-wrapper {
+      padding-left: 8.333333%;
+    }
+
+    &__services {
+      gap: 16px 48px;
+    }
+  }
+}
+
+@media (max-width: 1399px) {
+  .main-screen {
+    &__item-img {
+      max-width: 356px;
+    }
+
+    &__services {
+      gap: 16px 32px;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .main-screen {
+    &__item-wrapper {
+      padding-bottom: 232px;
+    }
+
+    &__item-img {
+      max-width: 248px;
+    }
+
+    &__bottom-wrapper {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 48px;
+      padding-bottom: 72px;
+    }
+
+    &__services {
+      gap: 8px 67px;
+    }
+
+    &__controls {
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .main-screen {
+    &__item-wrapper {
+      padding-left: 0;
+    }
+
+    &__bottom-wrapper {
+      padding-left: 0;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .main-screen {
+    &__item-wrapper {
+      padding: 24px 0 83px;
+    }
+
+    &__item-content {
+      flex-direction: column;
+      align-items: center;
+      border-bottom: 0;
+    }
+
+    &__item-title {
+      text-align: center;
+    }
+
+    &__item-img {
+      max-width: 336px;
+      max-height: 230px;
+    }
+
+    &__bottom-wrapper {
+      padding-bottom: 40px;
+    }
+
+    &__services {
+      display: none;
+    }
+  }
+}

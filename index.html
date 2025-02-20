@@ -19,45 +19,149 @@
     <div class="page">
         <header class="site-header">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-xxl-2">
-                        <a href="/" class="site-header__logo-link" rel="home">
-                            <img src="img/global/logo.svg" alt="лого" class="site-header__logo">
-                        </a>
-                    </div>
-                    <div class="col-xxl-8">
-                        <div class="site-header__center">
-                            <!--TODO: search-->
-                            <div class="site-header__messengers">
-                                <a href="#" class="site-header__messengers-item" target="_blank">WhatsApp</a>
-                                <a href="#" class="site-header__messengers-item" target="_blank">Telegram</a>
-                            </div>
-                            <a href="#" class="site-header__phone">
-                                +7 <span>(495)</span> 777-77-77
+                <div class="site-header__wrapper">
+                    <a href="/" class="site-header__logo-link" rel="home">
+                        <svg width="196" height="27" viewBox="0 0 196 27" fill="none" xmlns="http://www.w3.org/2000/svg" class="site-header__logo">
+                            <rect x="64.8809" width="131.118" height="27" rx="13.5" fill="#6924FF" />
+                            <path d="M37.4375 24.25V17.0344H40.7603L42.2887 17.0798L54.0512 17.0798L55.0702 17.0344H59.7221V24.25H55.8234V20.8011L41.3362 20.8011V24.25H37.4375ZM40.9375 3.7832L56.8424 3.7832V19.5304L52.6557 19.5304V5.57575L54.5386 7.52713L43.1748 7.52713L44.9026 6.09763C45.006 6.83885 45.0724 7.55738 45.102 8.25323C45.1315 8.93394 45.1463 9.5844 45.1463 10.2046C45.1463 12.0198 44.9986 13.5477 44.7032 14.7881C44.4079 16.0285 43.9649 16.9739 43.3741 17.6244C42.7982 18.2597 42.082 18.5774 41.2254 18.5774L39.4755 17.0798C40.0809 16.3689 40.5313 15.378 40.8267 14.1074C41.1221 12.8216 41.2697 11.2332 41.2697 9.34237C41.2697 8.48013 41.2402 7.58764 41.1811 6.66489C41.1221 5.72702 41.0408 4.76646 40.9375 3.7832Z" fill="white" />
+                            <path d="M26.9935 21.1637C25.0441 21.1637 23.3311 20.7931 21.8543 20.0519C20.3923 19.3107 19.2552 18.2745 18.443 16.9433C17.6307 15.6121 17.2246 14.0616 17.2246 12.2918C17.2246 10.5219 17.6307 8.9714 18.443 7.64023C19.2552 6.30905 20.3923 5.27285 21.8543 4.53163C23.3311 3.79041 25.0441 3.4198 26.9935 3.4198C28.9428 3.4198 30.6485 3.79041 32.1105 4.53163C33.5873 5.27285 34.7318 6.30905 35.544 7.64023C36.371 8.9714 36.7845 10.5219 36.7845 12.2918C36.7845 14.0616 36.371 15.6121 35.544 16.9433C34.7318 18.2745 33.5873 19.3107 32.1105 20.0519C30.6485 20.7931 28.9428 21.1637 26.9935 21.1637ZM26.9935 17.3291C28.1454 17.3291 29.1348 17.1324 29.9618 16.7391C30.7888 16.3307 31.4238 15.7483 31.8669 14.9919C32.3247 14.2356 32.5536 13.3355 32.5536 12.2918C32.5536 11.248 32.3247 10.348 31.8669 9.59161C31.4238 8.83526 30.7888 8.26043 29.9618 7.86713C29.1348 7.4587 28.1454 7.25449 26.9935 7.25449C25.8564 7.25449 24.8743 7.4587 24.0473 7.86713C23.2203 8.26043 22.5779 8.83526 22.1201 9.59161C21.6623 10.348 21.4334 11.248 21.4334 12.2918C21.4334 13.3355 21.6623 14.2356 22.1201 14.9919C22.5779 15.7483 23.2203 16.3307 24.0473 16.7391C24.8743 17.1324 25.8564 17.3291 26.9935 17.3291Z" fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4L0 21.0179H3.76578L7.30042 16.5736L5.45121 13.5848L4.16451 15.2471L4.16451 4L0 4Z" fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.43359 11.4271L8.26904 12.7774L9.3029 14.4484L13.3675 21.0179H17.8343L11.9076 11.1733L17.6128 4L13.1824 4L7.43359 11.4271Z" fill="#6924FF" />
+                            <path d="M177.549 17.2819V10.1892H179.266V16.3551L178.758 16.2511L182.913 10.1892L185.184 10.1892V17.2819H183.476V11.012L183.975 11.116L179.765 17.2819H177.549Z" fill="white" />
+                            <path d="M168.57 17.2802V10.1875H170.288V16.3534L169.78 16.2494L173.934 10.1875L176.205 10.1875V17.2802H174.497V11.0103L174.996 11.1143L170.786 17.2802H168.57Z" fill="white" />
+                            <path d="M166.435 10.1875V16.2778L165.826 15.7009L167.636 15.7009V18.7176H166.002V16.9587L166.537 17.2802H159.299V10.1875H161.044V16.2778L160.481 15.7009H165.3L164.691 16.2778V10.1875L166.435 10.1875Z" fill="white" />
+                            <path d="M151.837 15.8539V14.407H156.62V15.8539H151.837ZM155.401 10.1892L158.595 17.2819H156.74L153.998 10.9363H154.533L151.8 17.2819H149.936L153.139 10.1892H155.401Z" fill="white" />
+                            <path d="M146.364 17.4324C145.643 17.4324 145.013 17.3284 144.471 17.1203C143.929 16.9123 143.508 16.6191 143.206 16.2408C142.905 15.8563 142.741 15.4086 142.717 14.898H144.462C144.511 15.2699 144.696 15.5568 145.016 15.7585C145.336 15.954 145.785 16.0517 146.364 16.0517C146.905 16.0517 147.324 15.9729 147.619 15.8153C147.921 15.6577 148.072 15.4212 148.072 15.106C148.072 14.8349 147.945 14.6363 147.693 14.5102C147.441 14.3841 147.031 14.3211 146.465 14.3211H145.173V13.1295H146.437C146.77 13.1295 147.044 13.0948 147.259 13.0255C147.481 12.9561 147.644 12.8584 147.748 12.7323C147.853 12.6062 147.905 12.4612 147.905 12.2973C147.905 12.1082 147.844 11.9474 147.721 11.815C147.598 11.6826 147.422 11.5849 147.194 11.5218C146.967 11.4525 146.693 11.4178 146.373 11.4178C145.85 11.4178 145.434 11.5155 145.126 11.711C144.825 11.9001 144.646 12.1681 144.591 12.5148H142.865C142.895 12.0546 143.052 11.6385 143.335 11.2665C143.625 10.8945 144.031 10.5982 144.554 10.3776C145.083 10.1506 145.717 10.0371 146.456 10.0371C147.108 10.0371 147.675 10.1222 148.155 10.2924C148.635 10.4627 149.007 10.6959 149.272 10.9923C149.543 11.2886 149.678 11.6322 149.678 12.0231C149.678 12.3446 149.583 12.6409 149.392 12.912C149.207 13.1831 148.915 13.3975 148.515 13.5551C148.121 13.7127 147.61 13.7884 146.982 13.782V13.5929C147.579 13.5614 148.09 13.6055 148.515 13.7253C148.946 13.8388 149.275 14.0216 149.503 14.2738C149.736 14.526 149.853 14.8475 149.853 15.2384C149.853 15.6671 149.718 16.0486 149.447 16.3827C149.176 16.7105 148.779 16.969 148.256 17.1582C147.739 17.341 147.108 17.4324 146.364 17.4324Z" fill="white" />
+                            <path d="M134.191 17.2802V10.1875H135.909V16.3534L135.401 16.2494L139.555 10.1875L141.827 10.1875V17.2802H140.119V11.0103L140.617 11.1143L136.407 17.2802H134.191Z" fill="white" />
+                            <path d="M128.915 10.9819H130.66V17.2802H128.915V10.9819ZM126.219 10.1875L133.355 10.1875V11.7668L126.219 11.7668V10.1875Z" fill="white" />
+                            <path d="M120.396 15.8522V14.4053H125.178V15.8522H120.396ZM123.96 10.1875L127.154 17.2802H125.298L122.556 10.9346H123.092L120.359 17.2802H118.494L121.698 10.1875H123.96Z" fill="white" />
+                            <path d="M117.804 10.1875V17.2802H116.142V10.8117L116.548 10.84L113.732 17.2802H111.95L109.135 10.8589L109.541 10.8211V17.2802H107.879V10.1875H110.566L113.197 16.3912H112.495L115.117 10.1875H117.804Z" fill="white" />
+                            <path d="M102.769 17.4324C101.956 17.4324 101.242 17.278 100.627 16.969C100.017 16.6601 99.5436 16.2282 99.205 15.6734C98.8665 15.1186 98.6973 14.4724 98.6973 13.7348C98.6973 12.9971 98.8665 12.3509 99.205 11.7961C99.5436 11.2413 100.017 10.8094 100.627 10.5005C101.242 10.1916 101.956 10.0371 102.769 10.0371C103.581 10.0371 104.292 10.1916 104.901 10.5005C105.517 10.8094 105.994 11.2413 106.332 11.7961C106.677 12.3509 106.849 12.9971 106.849 13.7348C106.849 14.4724 106.677 15.1186 106.332 15.6734C105.994 16.2282 105.517 16.6601 104.901 16.969C104.292 17.278 103.581 17.4324 102.769 17.4324ZM102.769 15.8342C103.249 15.8342 103.661 15.7522 104.006 15.5883C104.351 15.4181 104.615 15.1754 104.8 14.8601C104.991 14.5449 105.086 14.1698 105.086 13.7348C105.086 13.2997 104.991 12.9246 104.8 12.6094C104.615 12.2942 104.351 12.0546 104.006 11.8907C103.661 11.7204 103.249 11.6353 102.769 11.6353C102.295 11.6353 101.886 11.7204 101.541 11.8907C101.196 12.0546 100.928 12.2942 100.738 12.6094C100.547 12.9246 100.451 13.2997 100.451 13.7348C100.451 14.1698 100.547 14.5449 100.738 14.8601C100.928 15.1754 101.196 15.4181 101.541 15.5883C101.886 15.7522 102.295 15.8342 102.769 15.8342Z" fill="white" />
+                            <path d="M94.0396 10.9819H95.7845V17.2802H94.0396V10.9819ZM91.3438 10.1875L98.4804 10.1875V11.7668L91.3438 11.7668V10.1875Z" fill="white" />
+                            <path d="M88.6183 13.8L88.766 13.4501C89.3076 13.4627 89.7508 13.5479 90.0955 13.7055C90.4463 13.8631 90.7048 14.0806 90.871 14.358C91.0433 14.6291 91.1295 14.9412 91.1295 15.2942C91.1295 15.6788 91.0433 16.0224 90.871 16.325C90.6987 16.6214 90.4401 16.8546 90.0955 17.0249C89.757 17.1951 89.3323 17.2802 88.8214 17.2802H83.8359L84.3714 13.6393L83.8359 10.1875H88.646C89.2861 10.1875 89.7816 10.342 90.1324 10.6509C90.4894 10.9535 90.6679 11.3728 90.6679 11.9087C90.6679 12.205 90.6002 12.4887 90.4648 12.7598C90.3294 13.0309 90.1139 13.261 89.8185 13.4501C89.5231 13.633 89.123 13.7496 88.6183 13.8ZM85.5532 16.8452L84.8884 16.0035H88.406C88.7075 16.0035 88.9414 15.931 89.1076 15.786C89.28 15.6347 89.3661 15.4235 89.3661 15.1524C89.3661 14.8813 89.2707 14.6669 89.0799 14.5093C88.8953 14.3454 88.6183 14.2634 88.249 14.2634H85.3685V13.0151H88.0274C88.2798 13.0151 88.489 12.9426 88.6552 12.7976C88.8214 12.6463 88.9045 12.4414 88.9045 12.1829C88.9045 11.9749 88.8306 11.8046 88.6829 11.6722C88.5414 11.5335 88.3383 11.4642 88.0736 11.4642H84.8977L85.5532 10.6225L86.0425 13.6393L85.5532 16.8452Z" fill="white" />
+                            <path d="M76.5796 15.8539V14.407H81.362V15.8539H76.5796ZM80.1433 10.1892L83.3377 17.2819H81.482L78.74 10.9363H79.2754L76.5427 17.2819H74.6777L77.8814 10.1892H80.1433Z" fill="white" />
+                        </svg>
+                        <svg width="36" height="34" viewBox="0 0 36 34" fill="none" xmlns="http://www.w3.org/2000/svg" class="site-header__logo-mobile">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0L0 34H7.60155L14.7365 25.1208L11.0037 19.1494L8.40642 22.4706L8.40642 0L0 0Z" fill="white" />
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.0059 14.8387L16.6923 17.5365L18.7792 20.8749L26.9839 34H36.0005L24.0371 14.3316L35.5534 0L26.6104 0L15.0059 14.8387Z" fill="#6924FF" />
+                        </svg>
+                    </a>
+                    <button type="button" class="site-header__scroll-menu-btn" data-bs-toggle="modal" data-bs-target="#menuModal" aria-label="Меню">
+                        Меню
+                    </button>
+                    <div class="site-header__center">
+                        <button type="button" class="site-header__search-btn search-btn" aria-label="Поиск"></button>
+                        <div class="site-header__messengers">
+                            <a href="#" class="site-header__messenger" target="_blank">
+                                WhatsApp
+                                <img src="img/global/whatsapp-24-circle-lviolet.svg" alt="" class="site-header__messenger-img">
+                                <img src="img/global/whatsapp-24-circle-ldark.svg" alt="" class="site-header__messenger-img site-header__messenger-img--hover">
+                            </a>
+                            <a href="#" class="site-header__messenger" target="_blank">
+                                Telegram
+                                <img src="img/global/telegram-24-circle-lviolet.svg" alt="" class="site-header__messenger-img">
+                                <img src="img/global/telegram-24-circle-ldark.svg" alt="" class="site-header__messenger-img site-header__messenger-img--hover">
                             </a>
                         </div>
+                        <a href="#" class="site-header__phone">
+                            <span>240</span>-75-23
+                        </a>
                     </div>
-                    <div class="col-xxl-2 d-flex">
-                        <button class="site-header__discuss-btn button">Обсудить проект</button>
-                    </div>
+                    <button type="button" class="site-header__discuss-btn button">Обсудить проект</button>
                 </div>
             </div>
-            <button type="button" class="site-header__menu-btn" data-bs-toggle="modal" data-bs-target="#menuModal">
+            <button type="button" class="site-header__menu-btn" data-bs-toggle="modal" data-bs-target="#menuModal" aria-label="Меню">
                 <span>Меню</span>
             </button>
+            <div class="site-header__search-wrapper">
+                <div class="container">
+                    <form role="search" method="get" action="" class="site-header__search-form">
+                        <label for="search-text" class="site-header__search-label">
+                            <input type="text" id="search-text" class="site-header__search-input" placeholder="Поиск по сайту">
+                        </label>
+                        <button type="submit" class="site-header__search-submit button button--violet">Найти</button>
+                    </form>
+                </div>
+            </div>
         </header>
         <main class="site-main">
+            <section class="main-screen">
+                <div class="main-screen__wrapper">
+                    <div class="main-screen__slider">
+                        <div class="main-screen__item">
+                            <div class="main-screen__item-wrapper">
+                                <div class="container">
+                                    <div class="main-screen__item-content">
+                                        <h1 class="main-screen__item-title">1С:Комплексная автоматизация</h1>
+                                        <img src="img/home-page/main-screen-word.png" alt=""
+                                             class="main-screen__item-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-screen__item">
+                            <div class="main-screen__item-wrapper">
+                                <div class="container">
+                                    <div class="main-screen__item-content">
+                                        <div class="main-screen__item-title main-title">2С:Комплексная автоматизация</div>
+                                        <img src="img/home-page/main-screen-word.png" alt=""
+                                             class="main-screen__item-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-screen__item">
+                            <div class="main-screen__item-wrapper">
+                                <div class="container">
+                                    <div class="main-screen__item-content">
+                                        <div class="main-screen__item-title main-title">3С:Комплексная автоматизация</div>
+                                        <img src="img/home-page/main-screen-word.png" alt=""
+                                             class="main-screen__item-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-screen__bottom">
+                        <div class="container">
+                            <div class="main-screen__bottom-wrapper">
+                                <ul class="main-screen__services">
+                                    <li class="main-screen__service">
+                                        <a href="#" class="main-screen__service-link">Внедрение 1С</a>
+                                    </li>
+                                    <li class="main-screen__service">
+                                        <a href="#" class="main-screen__service-link">Интеграция с 1С | Мой склад</a>
+                                    </li>
+                                    <li class="main-screen__service">
+                                        <a href="#" class="main-screen__service-link">Разработка</a>
+                                    </li>
+                                    <li class="main-screen__service">
+                                        <a href="#" class="main-screen__service-link">Сопровождение</a>
+                                    </li>
+                                    <li class="main-screen__service">
+                                        <a href="#" class="main-screen__service-link">Внедрение CRM</a>
+                                    </li>
+                                    <li class="main-screen__service">
+                                        <a href="#" class="main-screen__service-link">Консультация</a>
+                                    </li>
+                                </ul>
+                                <div class="main-screen__controls"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section class="about ptb-96">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-7">
+                        <div class="col-xxl-7 mb-xxl-0 mb-4">
                             <div class="about__left">
                                 <h2 class="about__title mb-3">О компании</h2>
                                 <div class="about__text mb-4">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.</div>
                                 <a href="#" class="button button--violet">Больше о нас</a>
                             </div>
                         </div>
-                        <div class="col-lg-5 d-flex">
+                        <div class="col-xxl-5 d-flex">
                             <div class="about__right">
                                 <div class="about__certificates mb-4">У нас 78 сертификатов “1С:Специалист” и “1С:Профессионал”, “1С:Центр сетевой компетенции”</div>
                                 <div class="about__team">
@@ -80,36 +184,36 @@
             <section class="principles ptb-96 bgc-ldark">
                 <div class="container">
                     <div class="row align-items-center">
-                        <div class="col-lg-8">
-                            <h2 class="mb-lg-5 mb-4 text-white">Наши принципы</h2>
+                        <div class="col-xxl-8 col-xl-7 col-lg-6">
+                            <h2 class="mb-lg-5 mb-sm-4 mb-2 text-white">Наши принципы</h2>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-xxl-4 col-xl-5 col-lg-6">
                             <div class="principles__text mb-lg-5 mb-4 text-white">14 лет на рынке IT-услуг, 2000+ клиентов, которых мы обслужили, 90+ профессиональных сертификатов от “1С”</div>
                         </div>
                     </div>
                     <div class="principles__list row">
-                        <div class="principles__item col-xl-3 col-md-6 mb-xl-0 mb-4">
+                        <div class="principles__item col-xl-3 col-6 mb-xl-0 mb-4">
                             <div class="principles__item-wrapper">
                                 <img src="img/home-page/principles-1.svg" alt="" class="principles__item-icon">
                                 <div class="principles__item-title">Персональный подход</div>
                                 <div class="principles__item-text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке</div>
                             </div>
                         </div>
-                        <div class="principles__item col-xl-3 col-md-6 mb-xl-0 mb-4">
+                        <div class="principles__item col-xl-3 col-6 mb-xl-0 mb-4">
                             <div class="principles__item-wrapper">
                                 <img src="img/home-page/principles-2.svg" alt="" class="principles__item-icon">
                                 <div class="principles__item-title">Несем ответственность</div>
                                 <div class="principles__item-text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке</div>
                             </div>
                         </div>
-                        <div class="principles__item col-xl-3 col-md-6 mb-xl-0 mb-4">
+                        <div class="principles__item col-xl-3 col-6 mb-xl-0 mb-4">
                             <div class="principles__item-wrapper">
                                 <img src="img/home-page/principles-3.svg" alt="" class="principles__item-icon">
                                 <div class="principles__item-title">Создаем лучшие решения</div>
                                 <div class="principles__item-text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке</div>
                             </div>
                         </div>
-                        <div class="principles__item col-xl-3 col-md-6 mb-xl-0 mb-4">
+                        <div class="principles__item col-xl-3 col-6 mb-xl-0 mb-4">
                             <div class="principles__item-wrapper">
                                 <img src="img/home-page/principles-4.svg" alt="" class="principles__item-icon">
                                 <div class="principles__item-title">Работаем на результат</div>
@@ -123,17 +227,17 @@
                 <div class="container d-flex flex-column">
                     <div class="row align-items-center">
                         <div class="col-lg-10">
-                            <h2><span class="text-violet">Результат</span> нашей работы</h2>
+                            <h2 class="mb-lg-4 mb-0"><span class="text-violet">Результат</span> нашей работы</h2>
                         </div>
                         <div class="col-lg-2 d-flex">
-                            <a href="#" class="cases__link details-link">Все кейсы</a>
+                            <a href="#" class="cases__link cases__link--desktop details-link">Все кейсы</a>
                         </div>
                     </div>
                     <div class="cases__slider">
                         <div class="cases__item">
                             <div class="cases__item-wrapper">
                                 <div class="row align-items-center">
-                                    <div class="col-lg-6 pe-xxl-4">
+                                    <div class="col-xl-6 pe-xxl-4">
                                         <div class="cases__item-content">
                                             <div class="cases__item-title">Расширение «Управление проектами и задачами»
                                             </div>
@@ -146,13 +250,14 @@
                                                 для конфигурации 1С “Управление нашей фирмой”, которое предназначено для
                                                 организации процессов системного учета выполнения работ в сфере оказания
                                             </div>
-                                            <a href="#" class="cases__item-btn button button--violet">Подробнее</a>
+                                            <a href="#" class="cases__item-btn cases__item-btn--desktop button button--violet">Подробнее</a>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 ps-xxl-4">
+                                    <div class="col-xl-6 ps-xxl-4">
                                         <div class="cases__item-img-wrapper">
                                             <img src="img/home-page/cases-1.png" alt="" class="cases__item-img">
                                         </div>
+                                        <a href="#" class="cases__item-btn cases__item-btn--mobile button button--violet">Подробнее</a>
                                     </div>
                                 </div>
                             </div>
@@ -160,7 +265,7 @@
                         <div class="cases__item">
                             <div class="cases__item-wrapper">
                                 <div class="row align-items-center">
-                                    <div class="col-lg-6 pe-xxl-4">
+                                    <div class="col-xl-6 pe-xxl-4">
                                         <div class="cases__item-content">
                                             <div class="cases__item-title">Расширение «Управление проектами и задачами» 2
                                             </div>
@@ -173,29 +278,31 @@
                                                 для конфигурации 1С “Управление нашей фирмой”, которое предназначено для
                                                 организации процессов системного учета выполнения работ в сфере оказания
                                             </div>
-                                            <a href="#" class="cases__item-btn button button--violet">Подробнее</a>
+                                            <a href="#" class="cases__item-btn cases__item-btn--desktop button button--violet">Подробнее</a>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 ps-xxl-4">
+                                    <div class="col-xl-6 ps-xxl-4">
                                         <div class="cases__item-img-wrapper">
                                             <img src="img/home-page/cases-1.png" alt="" class="cases__item-img">
                                         </div>
+                                        <a href="#" class="cases__item-btn cases__item-btn--mobile button button--violet">Подробнее</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="cases__controls"></div>
+                    <a href="#" class="cases__link cases__link--mobile details-link">Все кейсы</a>
                 </div>
             </section>
             <section class="services pb-96">
-                <div class="container">
+                <div class="container d-flex flex-column">
                     <div class="row align-items-center">
                         <div class="col-lg-10">
                             <h2 class="mb-lg-5">Наши услуги</h2>
                         </div>
                         <div class="col-lg-2 d-flex">
-                            <a href="#" class="services__link details-link">Все услуги</a>
+                            <a href="#" class="services__link services__link--desktop details-link">Все услуги</a>
                         </div>
                     </div>
                     <div class="services__list">
@@ -233,12 +340,13 @@
                             </a>
                         </div>
                     </div>
+                    <a href="#" class="services__link services__link--mobile details-link">Все услуги</a>
                 </div>
             </section>
             <section class="clients pb-96">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-8">
+                        <div class="col-xxl-8 col-lg-7 mb-lg-0 mb-5">
                             <div class="clients__content">
                                 <h2 class="mb-lg-5"><span class="text-violet">Наши</span> клиенты</h2>
                                 <ul class="clients__list">
@@ -255,9 +363,9 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-xxl-4 col-lg-5">
                             <div class="clients__form-wrapper">
-                                <h3 class="mb-3 text-white">Хотите стать нашим клиентом?</h3>
+                                <h3 class="mb-sm-3 mb-2 text-white">Хотите стать нашим клиентом?</h3>
                                 <div class="clients__form-text">Оставьте заявку, и мы скоро свяжемся с вами. Или напишите нам в
                                     <a href="#" class="clients__form-messenger" target="_blank">Telegram</a>, <a href="#" class="clients__form-messenger" target="_blank">WhatsApp</a></div>
                                 <form action="#" class="clients__form">
@@ -275,11 +383,11 @@
             <section class="awards ptb-96">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-xxl-6">
                             <img src="img/home-page/awards-logo.png" alt="" class="awards__logo">
-                            <h2 class="awards__title mb-lg-0">Знаем об автоматизации всё, <span class="text-violet">и у нас много наград</span></h2>
+                            <h2 class="awards__title mb-xxl-0">Знаем об автоматизации всё, <span class="text-violet">и у нас много наград</span></h2>
                         </div>
-                        <div class="col-lg-6 d-flex flex-column">
+                        <div class="col-xxl-6 d-flex flex-column">
                             <a href="#" class="awards__link details-link">Подробнее</a>
                             <ul class="awards__list">
                                 <li class="awards__item">
@@ -344,13 +452,13 @@
                 </div>
             </section>
             <section class="blog-block ptb-96">
-                <div class="container">
+                <div class="container d-flex flex-column">
                     <div class="row align-items-center">
-                        <div class="col-lg-10">
+                        <div class="col-xl-10 col-lg-9">
                             <h2 class="mb-lg-5"><span class="text-violet">Передаем</span> наш опыт и экспертизу</h2>
                         </div>
-                        <div class="col-lg-2 d-flex">
-                            <a href="#" class="blog-block__link details-link">Перейти в блог</a>
+                        <div class="col-xl-2 col-lg-3 d-flex">
+                            <a href="#" class="blog-block__link blog-block__link--desktop details-link">Перейти в блог</a>
                         </div>
                     </div>
                     <div class="blog-block__list row">
@@ -407,6 +515,7 @@
                             </a>
                         </article>
                     </div>
+                    <a href="#" class="blog-block__link blog-block__link--mobile details-link">Перейти в блог</a>
                 </div>
             </section>
             <section class="main-form pb-96">
@@ -435,11 +544,11 @@
                                     </div>
                                     <textarea class="main-form__form-textarea" placeholder="Ваш вопрос"></textarea>
                                     <div class="row align-items-center">
-                                        <div class="col-lg-5">
+                                        <div class="col-xxl-5 col-xl-6 col-lg-7 order-lg-1 order-2">
                                             <div class="main-form__form-policy">Нажимая на кнопку, Вы соглашаетесь с <a href="#">политикой
                                                 конфиденциальности</a></div>
                                         </div>
-                                        <div class="col-lg-7 d-flex">
+                                        <div class="col-xxl-7 col-xl-6 col-lg-5 order-lg-2 order-1 d-flex">
                                             <button type="submit" class="button ms-lg-auto">Отправить</button>
                                         </div>
                                     </div>
@@ -462,16 +571,16 @@
         <footer class="site-footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3">
+                    <div class="col-xl-3 col-lg-5 col-md-6 order-1 mb-5">
                         <a href="/" class="site-footer__logo-link" rel="home">
                             <img src="img/global/logo-footer.svg" alt="лого" class="site-footer__logo">
                         </a>
                         <div class="site-footer__site">ООО «Код автоматизации», 2024</div>
                         <a href="#" class="site-footer__privacy-policy">Политика конфиденциальности</a>
                     </div>
-                    <div class="col-lg-2">
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 order-lg-2 order-md-3 order-2 mb-sm-5">
                         <div class="site-footer__menu-title">Разработка</div>
-                        <ul class="site-footer__menu">
+                        <ul class="site-footer__menu site-footer__menu--development">
                             <li class="site-footer__menu-item">
                                 <a href="#" class="site-footer__menu-link">Корпоративные сайты</a>
                             </li>
@@ -486,9 +595,9 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-lg-2">
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 order-lg-3 order-md-4 order-3 mb-sm-5">
                         <div class="site-footer__menu-title">Услуги</div>
-                        <ul class="site-footer__menu">
+                        <ul class="site-footer__menu site-footer__menu--services">
                             <li class="site-footer__menu-item">
                                 <a href="#" class="site-footer__menu-link">Внедрение 1С</a>
                             </li>
@@ -509,7 +618,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-lg-2">
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 order-xl-4 order-md-5 order-4 mb-sm-0 mb-4">
                         <ul class="site-footer__menu">
                             <li class="site-footer__menu-item">
                                 <a href="#" class="site-footer__menu-link site-footer__menu-link--main-menu">О компании</a>
@@ -537,7 +646,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-xl-3 col-lg-5 col-sm-6 order-xl-5 order-lg-4 order-md-2 order-5 mb-lg-0 mb-md-5">
                         <div class="site-footer__contacts">
                             <a href="#" class="site-footer__phone">+7 (495) 777-77-77</a>
                             <a href="#" class="site-footer__email">KA@yandex.ru</a>
@@ -564,7 +673,8 @@
                             <img src="img/global/logo-menu.svg" alt="лого" class="menu__logo">
                         </a>
                         <div class="row">
-                            <div class="col-lg-2">
+                            <div class="col-lg-1 order-1 menu__hidden-column"></div>
+                            <div class="col-xxl-2 col-lg-3 col-sm-5 order-2">
                                 <div class="menu__title">Разработка</div>
                                 <ul class="menu__list">
                                     <li class="menu__item">
@@ -581,7 +691,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="col-lg-2">
+                            <div class="col-xl-2 col-lg-3 col-sm-5 offset-xl-0 offset-1 order-xl-3 order-5">
                                 <div class="menu__title">Услуги</div>
                                 <ul class="menu__list">
                                     <li class="menu__item">
@@ -604,7 +714,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="col-lg-3">
+                            <div class="col-xxl-3 col-xl-2 col-lg-3 col-sm-5 order-xl-4 order-3">
                                 <ul class="menu__list menu__list--main-menu">
                                     <li class="menu__item">
                                         <a href="#" class="menu__item-link menu__item-link--main-menu">О компании</a>
@@ -631,8 +741,26 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="col-lg-5">
+                            <div class="col-xl-4 col-lg-5 col-sm-7 order-xl-5 order-4">
                                 <div class="menu__contacts-title">Мы в социальных сетях</div>
+                                <div class="menu__socials">
+                                    <a href="#" class="menu__socials-item">
+                                        <img src="img/global/telegram-24-circle-lviolet.svg" alt="" class="menu__socials-img">
+                                        <img src="img/global/telegram-24-circle-ldark.svg" alt="" class="menu__socials-img menu__socials-img--hover">
+                                    </a>
+                                    <a href="#" class="menu__socials-item">
+                                        <img src="img/global/whatsapp-24-circle-lviolet.svg" alt="" class="menu__socials-img">
+                                        <img src="img/global/whatsapp-24-circle-ldark.svg" alt="" class="menu__socials-img menu__socials-img--hover">
+                                    </a>
+                                    <a href="#" class="menu__socials-item">
+                                        <img src="img/global/youtube-24-circle-lviolet.svg" alt="" class="menu__socials-img">
+                                        <img src="img/global/youtube-24-circle-ldark.svg" alt="" class="menu__socials-img menu__socials-img--hover">
+                                    </a>
+                                    <a href="#" class="menu__socials-item">
+                                        <img src="img/global/dzen-24-circle-lviolet.svg" alt="" class="menu__socials-img">
+                                        <img src="img/global/dzen-24-circle-ldark.svg" alt="" class="menu__socials-img menu__socials-img--hover">
+                                    </a>
+                                </div>
                                 <div class="menu__messengers">
                                     <div class="menu__messengers-title">Мессенджеры</div>
                                     <div class="menu__messengers-list">
@@ -655,5 +783,6 @@
     <script src="js/jquery.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/sliders.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

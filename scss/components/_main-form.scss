@@ -2,14 +2,14 @@
   &__wrapper {
     position: relative;
     border-radius: 8px;
-    padding: 96px 124px;
+    padding: 96px 6.2vw;
     background-color: $ldark;
 
     &::before {
       content: "";
       position: absolute;
       inset: 0;
-      background: url("../img/home-page/main-form-background-k.png") no-repeat;
+      background: url("../img/home-page/main-form-background-k.png") center/cover no-repeat;
     }
   }
 
@@ -17,6 +17,7 @@
     box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     max-width: 500px;
+    height: 100%;
     padding: 48px;
     backdrop-filter: blur(30px);
     background: rgba(255, 255, 255, 0.1);
@@ -68,6 +69,72 @@
         text-decoration: underline;
         color: $white;
       }
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .main-form {
+    &__wrapper {
+      padding: 48px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .main-form {
+    &__wrapper {
+      &::before {
+        content: none;
+      }
+    }
+
+    &__content {
+      margin-bottom: 24px;
+      box-shadow: none;
+      max-width: 100%;
+      padding: 0;
+      backdrop-filter: none;
+      background: transparent;
+    }
+
+    &__text-up {
+      display: inline-block;
+    }
+
+    &__text-down {
+      display: inline-block;
+      font-weight: 400;
+      color: $white;
+    }
+
+    &__messenger {
+      color: $white;
+    }
+
+    &__form-policy {
+      margin-top: 16px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .main-form {
+    &__wrapper {
+      padding: 36px;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .main-form {
+    &__wrapper {
+      padding: 24px;
+    }
+
+    &__form-input,
+    &__form-textarea{
+      margin-bottom: 16px;
     }
   }
 }

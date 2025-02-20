@@ -1,12 +1,11 @@
 .advantages {
   &__text {
     @include sff;
+    @include fs-42;
     position: relative;
     margin: auto;
     max-width: 1190px;
     font-weight: 700;
-    font-size: 42px;
-    line-height: 124%;
     text-align: center;
 
     &::before,
@@ -28,6 +27,52 @@
       right: -78px;
       bottom: -69px;
       background: url("../img/home-page/quote-down.svg") center/contain no-repeat;
+    }
+  }
+}
+
+@media (max-width: 1399px) {
+  .advantages {
+    &__text {
+      &::before {
+        left: 0;
+      }
+
+      &::after {
+        right: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .advantages {
+    &__text {
+      &::before,
+      &::after{
+        width: 96px;
+        height: 96px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .advantages {
+    &__text {
+      &::before,
+      &::after{
+        width: 74px;
+        height: 74px;
+      }
+
+      &::before {
+        top: -24px;
+      }
+
+      &::after {
+        bottom: -24px;
+      }
     }
   }
 }

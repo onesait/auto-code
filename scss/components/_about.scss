@@ -12,6 +12,7 @@
   &__right {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 
   &__team {
@@ -44,15 +45,61 @@
       display: inline-flex;
       align-items: center;
       gap: 8px;
+      transition: .4s ease;
       color: $white;
 
       &::after {
         content: "";
+        transition: .4s ease;
         min-width: 20px;
         width: 20px;
         height: 20px;
         background: url("../img/global/arrow-right-20-white.svg");
       }
+    }
+
+    &:hover {
+      span {
+        color: $lviolet;
+
+        &::after {
+          background: url("../img/global/arrow-right-20-lviolet.svg");
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1874px) {
+  .about {
+    &__team-link {
+      flex-direction: column;
+      gap: 16px;
+      padding: 24px;
+    }
+  }
+}
+
+@media (max-width: 1399px) {
+  .about {
+    &__team-link {
+      flex-direction: row;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .about {
+    &__left {
+      padding: 24px;
+    }
+
+    &__team {
+      padding: 24px;
+    }
+
+    &__team-link {
+      flex-direction: column;
     }
   }
 }

@@ -132,3 +132,34 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .site-footer {
+    padding: 48px 0 96px;
+
+    .container::before {
+      bottom: -96px;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .site-footer {
+    padding: 48px 0;
+
+    .container::before {
+      content: none;
+    }
+
+    &__logo-link {
+      margin-bottom: 24px;
+    }
+
+    &__menu {
+      &--development,
+      &--services {
+        display: none;
+      }
+    }
+  }
+}

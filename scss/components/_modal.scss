@@ -3,20 +3,20 @@
     @include sff;
     @include fs-20;
 
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     border-color: transparent;
     border-radius: 0;
     width: 92px;
-    height: 697px;
+    height: 100vh;
     background: $lgray2;
     font-weight: 800;
     text-transform: uppercase;
     color: $lviolet;
 
     &:hover {
-      background: $lgray2;
+      background-color: $lgray2;
       color: $lviolet;
 
       span {
@@ -27,6 +27,14 @@
     span {
       transform: rotate(-90deg);
       transition: .4s ease;
+    }
+  }
+}
+
+@media (max-width: 1399px) {
+  .modal-close-btn {
+    &--menu {
+      width: 82px;
     }
   }
 }

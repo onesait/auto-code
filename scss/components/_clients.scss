@@ -2,6 +2,7 @@
   &__content {
     box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    height: 100%;
     padding: 96px;
   }
 
@@ -26,7 +27,7 @@
       content: "";
       box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.1);
       border-radius: 8px;
-      width: 36px;
+      min-width: 36px;
       height: 36px;
     }
 
@@ -38,7 +39,7 @@
       transform: translateY(-50%);
       width: 16px;
       height: 16px;
-      background: url('../img/global/check-16-lviolet.svg');
+      background: url('../img/global/check-16-lviolet.svg') center/contain no-repeat;
     }
   }
 
@@ -85,6 +86,71 @@
       &:hover {
         text-decoration: underline;
       }
+    }
+  }
+}
+
+@media (max-width: 1399px) {
+  .clients {
+    &__content {
+      padding: 72px;
+    }
+
+    &__list {
+      padding-left: 0;
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .clients {
+    &__content {
+      padding: 48px 30px;
+    }
+
+    &__list {
+      gap: 16px 24px;
+    }
+
+    &__form-wrapper {
+      padding: 36px;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .clients {
+    &__content {
+      padding: 24px;
+    }
+
+    &__list {
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    &__item {
+      gap: 8px;
+      width: 100%;
+
+      &::before {
+        min-width: 24px;
+        height: 24px;
+      }
+
+      &::after {
+        left: 6px;
+        width: 12px;
+        height: 12px;
+      }
+    }
+
+    &__form-wrapper {
+      padding: 24px;
+    }
+
+    &__form-input {
+      margin-bottom: 16px;
     }
   }
 }

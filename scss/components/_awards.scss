@@ -3,6 +3,7 @@
 
   &__logo {
     margin-bottom: 24px;
+    max-width: 100%;
   }
 
   &__link {
@@ -26,6 +27,7 @@
     display: flex;
     box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    height: 100%;
     padding: 16px;
     backdrop-filter: blur(25px);
     background-color: $white;
@@ -101,5 +103,35 @@
     border-radius: 4px;
     max-height: 126px;
     object-fit: contain;
+  }
+}
+
+@media (max-width: 1399px) {
+  .awards {
+    &__link {
+      order: 2;
+      margin: 24px 0 0 auto;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .awards {
+    &__item {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .awards {
+    &__logo {
+      margin-bottom: 16px;
+    }
+
+    &__item-logo {
+      width: 48px;
+      height: 48px;
+    }
   }
 }

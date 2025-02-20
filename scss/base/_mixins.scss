@@ -19,26 +19,106 @@
 @mixin fs-16 {
   font-size: 16px;
   line-height: 150%;
+
+  @media (max-width: 575px) {
+    font-size: 14px;
+    line-height: 143%;
+  }
 }
 
 @mixin fs-20 {
   font-size: 20px;
   line-height: 130%;
+
+  @media (max-width: 1874px) {
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 14px;
+    line-height: 143%;
+  }
 }
 
 @mixin fs-24 {
   font-size: 24px;
   line-height: 133%;
+
+  @media (max-width: 1874px) {
+    font-size: 20px;
+    line-height: 150%;
+  }
+
+  @media (max-width: 1399px) {
+    font-size: 18px;
+    line-height: 167%;
+  }
+
+  @media (max-width: 991px) {
+    font-size: 16px;
+    line-height: 162%;
+  }
 }
 
 @mixin fs-30 {
   font-size: 30px;
   line-height: 133%;
+
+  @media (max-width: 1874px) {
+    font-size: 24px;
+    line-height: 150%;
+  }
+
+  @media (max-width: 1399px) {
+    font-size: 20px;
+    line-height: 150%;
+  }
 }
 
 @mixin fs-32 {
   font-size: 32px;
   line-height: 131%;
+
+  @media (max-width: 1874px) {
+    font-size: 24px;
+    line-height: 150%;
+  }
+
+  @media (max-width: 1399px) {
+    font-size: 20px;
+    line-height: 150%;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 18px;
+    line-height: 167%;
+  }
+}
+
+@mixin fs-42 {
+  font-size: 42px;
+  line-height: 124%;
+
+  @media (max-width: 1199px) {
+    font-size: 36px;
+    line-height: 133%;
+  }
+
+  @media (max-width: 991px) {
+    font-size: 32px;
+    line-height: 131%;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 24px;
+    line-height: 150%;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 20px;
+    line-height: 150%;
+  }
 }
 
 @mixin fs-56 {
