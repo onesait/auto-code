@@ -20,12 +20,14 @@
     &::before {
       top: -48px;
       left: -76px;
+      animation: moving-up 5s ease-out infinite;
       background: url("../img/home-page/quote-up.svg") center/contain no-repeat;
     }
 
     &::after {
       right: -78px;
       bottom: -69px;
+      animation: moving-down 5s ease-out infinite;
       background: url("../img/home-page/quote-down.svg") center/contain no-repeat;
     }
   }
@@ -74,5 +76,33 @@
         bottom: -24px;
       }
     }
+  }
+}
+
+@keyframes moving-up {
+  from {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-24px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes moving-down {
+  from {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(24px);
+  }
+
+  to {
+    transform: translateY(0);
   }
 }

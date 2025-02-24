@@ -1,6 +1,7 @@
 .main-form {
   &__wrapper {
     position: relative;
+    overflow: hidden;
     border-radius: 8px;
     padding: 96px 6.2vw;
     background-color: $ldark;
@@ -9,6 +10,7 @@
       content: "";
       position: absolute;
       inset: 0;
+      animation: moving 10s ease-out infinite;
       background: url("../img/home-page/main-form-background-k.png") center/cover no-repeat;
     }
   }
@@ -136,5 +138,19 @@
     &__form-textarea{
       margin-bottom: 16px;
     }
+  }
+}
+
+@keyframes moving {
+  from {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  to {
+    transform: scale(1);
   }
 }

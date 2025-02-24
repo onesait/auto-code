@@ -1,11 +1,21 @@
 .marquee {
-  padding: 32px 0;
+  overflow: hidden;
   background-color: $ldark;
 
   &__wrapper {
+    padding: 32px 0;
+
+    &:hover {
+      .marquee__item {
+        animation-play-state: paused;
+      }
+    }
+  }
+
+  &__content {
     display: flex;
     gap: 16px;
-    overflow: hidden;
+
   }
 
   &__item {

@@ -34,6 +34,16 @@
           height: 55px;
           background: url("../img/home-page/services-mobile-development.png");
         }
+
+        &:hover {
+          box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.1);
+          border-color: $lviolet;
+          background-color: $lviolet;
+
+          .services__item-title {
+            color: $white;
+          }
+        }
       }
 
       .services__item-title {
@@ -68,9 +78,18 @@
           position: absolute;
           right: 0;
           bottom: 0;
+          transition: .4s ease;
           width: 227px;
           height: 144px;
           background: url("../img/home-page/services-development.svg");
+        }
+
+        &:hover {
+          &::before {
+            right: -3px;
+            bottom: -3px;
+            background: url("../img/home-page/services-development-hover.svg");
+          }
         }
       }
 
@@ -101,20 +120,33 @@
     padding: 32px;
 
     &:hover {
-      box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.1);
-      border-color: $white;
+      border-color: $lviolet;
+      background-color: $lviolet;
+
+      .services__item-category {
+        color: $white;
+      }
+
+      .services__item-title {
+        color: $white;
+      }
+
+      .services__item-description {
+        color: $white;
+      }
 
       .services__item-link {
-        color: $lviolet;
+        color: $white;
 
         &::after {
-          background: url("../img/global/arrow-right-20-violet.svg") center/contain no-repeat;
+          background: url("../img/global/arrow-right-20-white.svg") center/contain no-repeat;
         }
       }
     }
   }
 
   &__item-category {
+    transition: .4s ease;
     margin-bottom: 16px;
     font-weight: 700;
     color: $gray;
@@ -122,12 +154,14 @@
 
   &__item-title {
     @include fs-32;
+    transition: .4s ease;
     font-weight: 700;
     color: $dark;
   }
 
   &__item-description {
     @include fs-14;
+    transition: .4s ease;
     margin: 8px 0 24px;
     font-weight: 500;
     color: $gray;
