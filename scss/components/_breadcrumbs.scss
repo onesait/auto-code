@@ -1,0 +1,8 @@
+.breadcrumbs {
+  &__wrapper {
+    @include fs-14;
+    padding-bottom: 24px;
+    font-weight: 500;
+    color: $gray;
+  }
+}

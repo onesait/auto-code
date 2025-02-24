@@ -3,7 +3,7 @@ let scrollSpeed = 20;
 let isScrolling = false;
 let userScrollOffset = 0;
 
-marqueeContent.addEventListener('wheel', (e) => {
+marqueeContent && marqueeContent.addEventListener('wheel', (e) => {
     e.preventDefault();
     if (!isScrolling) {
         isScrolling = true;
@@ -16,11 +16,11 @@ marqueeContent.addEventListener('wheel', (e) => {
     }
 });
 
-marqueeContent.addEventListener('animationiteration', () => {
+marqueeContent && marqueeContent.addEventListener('animationiteration', () => {
     userScrollOffset = 0;
     marqueeContent.style.transform = `translateX(${userScrollOffset}px)`;
 });
 
-marqueeContent.addEventListener('mouseleave', () => {
+marqueeContent && marqueeContent.addEventListener('mouseleave', () => {
     marqueeContent.style.animationPlayState = 'running';
 });

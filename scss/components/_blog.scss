@@ -1,0 +1,228 @@
+.blog {
+  &__categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 48px;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__category-link {
+    @include fs-14;
+    transition: .4s ease;
+    border: 3px solid $lviolet;
+    border-radius: 8px;
+    min-width: 138px;
+    padding: 8px 11px;
+    font-weight: 500;
+    color: $lviolet;
+
+    &:visited {
+      color: $lviolet;
+    }
+
+    &:hover {
+      background-color: $lviolet;
+      color: $white;
+    }
+
+    &--current {
+      border-color: $lgray;
+      background-color: $lgray;
+      color: $gray;
+
+      &:visited {
+        color: $gray;
+      }
+
+      &:hover {
+        border-color: $lgray;
+        background-color: $lgray;
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__item:first-child {
+    .blog__item-wrapper {
+      flex-direction: column-reverse;
+      gap: 16px;
+      margin-bottom: 24px;
+      border: 0;
+      padding: 0;
+
+      &:hover {
+        box-shadow: none;
+      }
+    }
+
+    .blog__item-content {
+      max-width: 100%;
+    }
+
+    .blog__item-date {
+      margin-bottom: 16px;
+      border-radius: 4px;
+      padding: 8px 16px;
+      background-color: $lgray;
+
+      &::before {
+        content: none;
+      }
+    }
+
+    .blog__item-title {
+      @include fs-32;
+    }
+
+    .blog__item-img-wrapper {
+      margin: 0;
+      width: 100%;
+    }
+  }
+
+  &__item-wrapper {
+    display: flex;
+    gap: 44px;
+    transition: .4s ease;
+    border: 3px solid $lgray;
+    border-radius: 8px;
+    padding: 48px;
+
+    &:hover {
+      box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.1);
+      border-color: $white;
+
+      .blog__item-link {
+        color: $lviolet;
+
+        &::after {
+          background: url("../img/global/arrow-right-20-lviolet.svg") center/contain no-repeat;
+        }
+      }
+    }
+  }
+
+  &__item-content {
+    max-width: 476px;
+  }
+
+  &__item-date {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+    color: $dark;
+
+    &::before {
+      content: "";
+      width: 20px;
+      height: 20px;
+      background: url("../img/global/calendar-20-lviolet.svg");
+    }
+  }
+
+  &__item-title {
+    @include fs-24;
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: $dark;
+  }
+
+  &__item-excerpt {
+    margin-bottom: 16px;
+    color: $gray;
+  }
+
+  &__item-img-wrapper {
+    position: relative;
+    margin-left: auto;
+    width: 456px;
+  }
+
+  &__item-category {
+    @include fs-12;
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    border-radius: 8px;
+    padding: 8px 16px;
+    background-color: $lgray;
+    color: $lviolet;
+  }
+
+  &__item-img {
+    border-radius: 8px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 48px;
+  }
+
+  &__navigation-prev,
+  &__navigation-next {
+    position: relative;
+    box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 48px;
+    height: 48px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__navigation-prev::before {
+    background: url("../img/global/chevron-left-24-gray.svg");
+  }
+
+  &__navigation-next::before {
+    background: url("../img/global/chevron-right-24-lviolet.svg");
+  }
+
+  &__navigation-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: .4s ease;
+    box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 48px;
+    height: 48px;
+    font-weight: 700;
+
+    &:hover {
+      background-color: $lviolet;
+      color: $white;
+    }
+
+    &--current {
+      box-shadow: none;
+      background-color: $lgray;
+      color: $gray;
+
+      &:hover {
+        background-color: $lgray;
+        color: $gray;
+      }
+    }
+  }
+}

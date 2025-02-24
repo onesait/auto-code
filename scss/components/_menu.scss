@@ -38,6 +38,10 @@
     font-weight: 700;
     color: $dark;
 
+    &:visited {
+      color: $dark;
+    }
+
     &:hover {
       color: $lviolet;
     }
@@ -129,6 +133,10 @@
   &__messenger {
     font-weight: 700;
     color: $white;
+
+    &:visited {
+      color: $white;
+    }
 
     &:hover {
       text-decoration: underline;

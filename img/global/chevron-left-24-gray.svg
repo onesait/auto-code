@@ -1,0 +1,24 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_689_2253)">
+<foreignObject x="-23.002" y="-27.0002" width="70" height="98.0002"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(15px);clip-path:url(#bgblur_1_689_2253_clip_path);height:100%;width:100%"></div></foreignObject><g filter="url(#filter0_d_689_2253)" data-figma-bg-blur-radius="30">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M15.9983 21C15.7423 21 15.4863 20.902 15.2913 20.707L7.2913 12.707C6.9003 12.316 6.9003 11.684 7.2913 11.293L15.2913 3.29301C15.6823 2.90201 16.3143 2.90201 16.7053 3.29301C17.0963 3.68401 17.0963 4.31601 16.7053 4.70701L9.4123 12L16.7053 19.293C17.0963 19.684 17.0963 20.316 16.7053 20.707C16.5103 20.902 16.2543 21 15.9983 21Z" fill="#8C8C8C"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_689_2253" x="-23.002" y="-27.0002" width="70" height="98.0002" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feMorphology radius="10" operator="erode" in="SourceAlpha" result="effect1_dropShadow_689_2253"/>
+<feOffset dy="20"/>
+<feGaussianBlur stdDeviation="20"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_689_2253"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_689_2253" result="shape"/>
+</filter>
+<clipPath id="bgblur_1_689_2253_clip_path"><path transform="translate(23.002 27.0002)" fill-rule="evenodd" clip-rule="evenodd" d="M15.9983 21C15.7423 21 15.4863 20.902 15.2913 20.707L7.2913 12.707C6.9003 12.316 6.9003 11.684 7.2913 11.293L15.2913 3.29301C15.6823 2.90201 16.3143 2.90201 16.7053 3.29301C17.0963 3.68401 17.0963 4.31601 16.7053 4.70701L9.4123 12L16.7053 19.293C17.0963 19.684 17.0963 20.316 16.7053 20.707C16.5103 20.902 16.2543 21 15.9983 21Z"/>
+</clipPath><clipPath id="clip0_689_2253">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>

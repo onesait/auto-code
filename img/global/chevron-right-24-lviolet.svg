@@ -1,0 +1,24 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_689_2259)">
+<foreignObject x="-22.998" y="-27.0002" width="70" height="98.0002"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(15px);clip-path:url(#bgblur_1_689_2259_clip_path);height:100%;width:100%"></div></foreignObject><g filter="url(#filter0_d_689_2259)" data-figma-bg-blur-radius="30">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.0017 21C8.2577 21 8.5137 20.902 8.7087 20.707L16.7087 12.707C17.0997 12.316 17.0997 11.684 16.7087 11.293L8.7087 3.29301C8.3177 2.90201 7.6857 2.90201 7.2947 3.29301C6.9037 3.68401 6.9037 4.31601 7.2947 4.70701L14.5877 12L7.2947 19.293C6.9037 19.684 6.9037 20.316 7.2947 20.707C7.4897 20.902 7.7457 21 8.0017 21Z" fill="#8073FF"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_689_2259" x="-22.998" y="-27.0002" width="70" height="98.0002" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feMorphology radius="10" operator="erode" in="SourceAlpha" result="effect1_dropShadow_689_2259"/>
+<feOffset dy="20"/>
+<feGaussianBlur stdDeviation="20"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_689_2259"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_689_2259" result="shape"/>
+</filter>
+<clipPath id="bgblur_1_689_2259_clip_path"><path transform="translate(22.998 27.0002)" fill-rule="evenodd" clip-rule="evenodd" d="M8.0017 21C8.2577 21 8.5137 20.902 8.7087 20.707L16.7087 12.707C17.0997 12.316 17.0997 11.684 16.7087 11.293L8.7087 3.29301C8.3177 2.90201 7.6857 2.90201 7.2947 3.29301C6.9037 3.68401 6.9037 4.31601 7.2947 4.70701L14.5877 12L7.2947 19.293C6.9037 19.684 6.9037 20.316 7.2947 20.707C7.4897 20.902 7.7457 21 8.0017 21Z"/>
+</clipPath><clipPath id="clip0_689_2259">
+<rect width="24" height="24" fill="white" transform="matrix(-1 0 0 1 24 0)"/>
+</clipPath>
+</defs>
+</svg>
