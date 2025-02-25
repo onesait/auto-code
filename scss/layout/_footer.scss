@@ -119,6 +119,43 @@
     }
   }
 
+  &__socials {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 16px;
+  }
+
+  &__socials-item {
+    position: relative;
+    width: 24px;
+    height: 24px;
+
+    &:hover {
+      .site-footer__socials-img {
+        opacity: 0;
+        visibility: hidden;
+
+        &--hover {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
+
+  &__socials-img {
+    position: absolute;
+    inset: 0;
+    transition: .4s ease;
+    width: 100%;
+    height: 100%;
+
+    &--hover {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
   &__messengers {
     @include fs-14;
     font-weight: 500;

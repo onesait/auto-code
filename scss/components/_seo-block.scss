@@ -2,4 +2,46 @@
   &__text p:last-child {
     margin-bottom: 0;
   }
+
+  &__btn {
+    display: none;
+    gap: 8px;
+    border: 0;
+    padding: 0;
+    color: $lviolet;
+
+    &::after {
+      content: "";
+      transition: .4s ease;
+      width: 20px;
+      height: 20px;
+      background: url("../img/global/chevron-down-20-lviolet.svg");
+    }
+
+    &.active {
+      &::after {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .seo-block {
+    &__text {
+      overflow: hidden;
+      margin-bottom: 16px;
+      max-height: 240px;
+
+      &.show {
+        overflow: visible;
+        max-height: 100%;
+      }
+    }
+
+    &__btn {
+      display: inline-flex;
+      width: auto;
+    }
+  }
 }
