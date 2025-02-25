@@ -1,8 +1,17 @@
 .breadcrumbs {
   &__wrapper {
     @include fs-14;
-    padding-bottom: 24px;
+    display: flex;
+    margin: 0;
+    padding: 0 0 24px;
     font-weight: 500;
     color: $gray;
+    list-style: none;
+  }
+
+  &__item {
+    & + &::before {
+      content: "/";
+    }
   }
 }

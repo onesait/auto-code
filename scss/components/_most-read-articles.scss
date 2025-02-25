@@ -59,4 +59,10 @@
   &__item-views::before {
     background: url('../img/global/visibility-20-lviolet.svg');
   }
+
+  &--single-blog {
+    position: relative;
+    top: 0;
+    margin-bottom: 48px;
+  }
 }

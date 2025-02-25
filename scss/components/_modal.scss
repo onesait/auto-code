@@ -13,20 +13,15 @@
     background: $lgray2;
     font-weight: 800;
     text-transform: uppercase;
-    color: $lviolet;
+    color: $dark;
 
     &:hover {
       background-color: $lgray2;
       color: $lviolet;
-
-      span {
-        letter-spacing: 0.24em;
-      }
     }
 
     span {
       transform: rotate(-90deg);
-      transition: .4s ease;
     }
   }
 }

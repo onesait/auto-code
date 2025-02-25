@@ -307,6 +307,13 @@
         color: $white;
       }
     }
+
+    .site-header__menu-btn {
+      box-shadow: none;
+      backdrop-filter: none;
+      background: $lgray2;
+      color: $lviolet;
+    }
   }
 }
 
