@@ -19,14 +19,12 @@
   &__scroll-menu-btn {
     @include sff;
     @include fs-20;
-    opacity: 0;
-    visibility: hidden;
     transition: .4s ease;
     border: 0;
     padding: 0;
     font-weight: 800;
     text-transform: uppercase;
-    color: $dark;
+    color: $white;
 
     &:hover {
       background-color: transparent;
@@ -216,8 +214,7 @@
       }
 
       &__scroll-menu-btn {
-        opacity: 1;
-        visibility: visible;
+        color: $dark;
       }
 
       &__search-btn {
@@ -256,11 +253,6 @@
           background-color: $lviolet;
           color: $white;
         }
-      }
-
-      &__menu-btn {
-        opacity: 0;
-        visibility: visible;
       }
     }
   }
@@ -305,30 +297,6 @@
       &:hover {
         background-color: $lviolet;
         color: $white;
-      }
-    }
-
-    .site-header__menu-btn {
-      box-shadow: none;
-      backdrop-filter: none;
-      background: $lgray2;
-      color: $lviolet;
-    }
-  }
-}
-
-@media (max-width: 1874px) {
-  .site-header {
-    &__wrapper {
-      transition: .4s ease;
-      padding-left: 8.333333%;
-    }
-
-    &.scrolled {
-      .site-header {
-        &__wrapper {
-          padding-left: 0;
-        }
       }
     }
   }
@@ -384,23 +352,13 @@
         visibility: hidden;
       }
     }
-
-    &__menu-btn {
-      width: 84px;
-    }
   }
 }
 
 @media (max-width: 991px) {
   .site-header {
-    &__wrapper {
-      padding-left: 0;
-    }
-
     &__scroll-menu-btn {
       order: 3;
-      opacity: 1;
-      visibility: visible;
       margin-left: 24px;
       color: $white;
 
@@ -410,10 +368,6 @@
     }
 
     &__discuss-btn {
-      display: none;
-    }
-
-    &__menu-btn {
       display: none;
     }
 

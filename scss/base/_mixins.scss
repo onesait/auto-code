@@ -26,6 +26,11 @@
   }
 }
 
+@mixin fs-18 {
+  font-size: 18px;
+  line-height: 167%;
+}
+
 @mixin fs-20 {
   font-size: 20px;
   line-height: 130%;

@@ -3,33 +3,24 @@
     @include sff;
     @include fs-20;
 
-    position: fixed;
-    top: 0;
-    left: 0;
-    border-color: transparent;
+    border: 0;
     border-radius: 0;
-    width: 92px;
-    height: 100vh;
-    background: $lgray2;
+    padding: 0;
     font-weight: 800;
     text-transform: uppercase;
     color: $dark;
 
     &:hover {
-      background-color: $lgray2;
       color: $lviolet;
-    }
-
-    span {
-      transform: rotate(-90deg);
     }
   }
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 575px) {
   .modal-close-btn {
     &--menu {
-      width: 82px;
+      @include fs-12;
+      width: auto;
     }
   }
 }

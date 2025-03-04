@@ -68,16 +68,8 @@
 
 @media (max-width: 1874px) {
   .main-screen {
-    &__item-wrapper {
-      padding-left: calc(8.333333% + 12px);
-    }
-
     &__item-img {
       max-width: 416px;
-    }
-
-    &__bottom-wrapper {
-      padding-left: 8.333333%;
     }
 
     &__services {
