@@ -417,9 +417,14 @@
     }
 
     &__phone {
+      font-size: 0;
+
       &::before {
-        width: 16px;
-        height: 16px;
+        margin-right: 0;
+      }
+
+      span {
+        font-size: 0;
       }
     }
 

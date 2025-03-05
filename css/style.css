@@ -680,9 +680,14 @@ ul li::marker {
     width: 20px;
     height: 20px;
   }
+  .site-header__phone {
+    font-size: 0;
+  }
   .site-header__phone::before {
-    width: 16px;
-    height: 16px;
+    margin-right: 0;
+  }
+  .site-header__phone span {
+    font-size: 0;
   }
   .site-header__scroll-menu-btn {
     width: auto;
