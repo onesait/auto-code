@@ -56,15 +56,12 @@
 
   &__phone {
     display: none;
-    align-items: center;
-    gap: 8px;
-    font-weight: 700;
-    color: $dark;
+    font-size: 0;
 
     &::before {
       content: "";
-      width: 16px;
-      height: 16px;
+      width: 20px;
+      height: 20px;
       background: url("../img/global/phone-20-dark.svg") center/contain no-repeat;
     }
   }
