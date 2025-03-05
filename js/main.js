@@ -34,3 +34,17 @@ if (seoBtn && seoText) {
 	seoBtn.setAttribute("aria-expanded", false);
 }
 
+
+const developmentMenuTitle = document.querySelector(".menu__title--development");
+const servicesMenuTitle = document.querySelector(".menu__title--services");
+
+openMenu(developmentMenuTitle);
+openMenu(servicesMenuTitle);
+
+function openMenu(el) {
+	el.addEventListener("click", () => {
+		const menu = el.nextElementSibling
+		el.classList.toggle("active");
+		menu.classList.toggle("show");
+	});
+}

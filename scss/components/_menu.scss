@@ -69,50 +69,34 @@
     }
   }
 
-  &__search-form {
-    display: none;
-    gap: 16px;
-    margin-bottom: 32px;
-    box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    padding: 16px;
-  }
-
-  &__search-label {
-    position: relative;
-    flex: 1;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 24px;
-      transform: translateY(-50%);
-      width: 16px;
-      height: 16px;
-      background: url(../img/global/search-16-gray.svg);
-    }
-  }
-
-  &__search-input {
-    @include fs-12;
-    border: 3px solid $lgray;
-    border-radius: 8px;
-    width: 100%;
-    padding: 13px 13px 13px 45px;
-  }
-
-  &__search-submit {
-    @include fs-14;
-    width: auto;
-    padding: 11px 20px;
-  }
-
   &__title {
     @include sff;
     @include fs-30;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
     margin-bottom: 24px;
     font-weight: 700;
+
+    &--development,
+    &--services {
+      &::after {
+        content: "";
+        opacity: 0;
+        visibility: hidden;
+        transition: .4s ease;
+        width: 24px;
+        height: 24px;
+        background: url("../img/global/chevron-right-24-dark.svg");
+      }
+    }
+
+    &.active {
+      &::after {
+        background: url("../img/global/chevron-up-24-lviolet.svg");
+      }
+    }
   }
 
   &__list {
@@ -125,6 +109,11 @@
 
     &--main-menu {
       gap: 24px;
+    }
+
+    &.show {
+      display: flex;
+      margin-bottom: 8px;
     }
   }
 
@@ -371,7 +360,7 @@
 @media (max-width: 575px) {
   .menu {
     &__header {
-      margin-bottom: 8px;
+      margin-bottom: 32px;
     }
 
     &__logo-desktop {
@@ -390,12 +379,22 @@
       display: inline-flex;
     }
 
-    &__search-form {
-      display: flex;
-    }
-
     &__contacts-title {
       margin-bottom: 8px;
+    }
+
+    &__title {
+      &--development,
+      &--services {
+        &::after {
+          opacity: 1;
+          visibility: visible;
+        }
+
+        & + ul {
+          display: none;
+        }
+      }
     }
   }
 }

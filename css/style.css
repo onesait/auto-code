@@ -2434,46 +2434,14 @@ ul li::marker {
   height: 16px;
   background: url("../img/global/phone-20-dark.svg") center/contain no-repeat;
 }
-.menu__search-form {
-  display: none;
-  gap: 16px;
-  margin-bottom: 32px;
-  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  padding: 16px;
-}
-.menu__search-label {
-  position: relative;
-  flex: 1;
-}
-.menu__search-label::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 24px;
-  transform: translateY(-50%);
-  width: 16px;
-  height: 16px;
-  background: url(../img/global/search-16-gray.svg);
-}
-.menu__search-input {
-  font-size: 12px;
-  line-height: 150%;
-  border: 3px solid #f0f0f0;
-  border-radius: 8px;
-  width: 100%;
-  padding: 13px 13px 13px 45px;
-}
-.menu__search-submit {
-  font-size: 14px;
-  line-height: 143%;
-  width: auto;
-  padding: 11px 20px;
-}
 .menu__title {
   font-family: "Unbounded", sans-serif;
   font-size: 30px;
   line-height: 133%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
   margin-bottom: 24px;
   font-weight: 700;
 }
@@ -2489,6 +2457,18 @@ ul li::marker {
     line-height: 150%;
   }
 }
+.menu__title--development::after, .menu__title--services::after {
+  content: "";
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s ease;
+  width: 24px;
+  height: 24px;
+  background: url("../img/global/chevron-right-24-dark.svg");
+}
+.menu__title.active::after {
+  background: url("../img/global/chevron-up-24-lviolet.svg");
+}
 .menu__list {
   display: flex;
   flex-direction: column;
@@ -2499,6 +2479,10 @@ ul li::marker {
 }
 .menu__list--main-menu {
   gap: 24px;
+}
+.menu__list.show {
+  display: flex;
+  margin-bottom: 8px;
 }
 .menu__item-link {
   font-size: 20px;
@@ -2761,7 +2745,7 @@ ul li::marker {
 }
 @media (max-width: 575px) {
   .menu__header {
-    margin-bottom: 8px;
+    margin-bottom: 32px;
   }
   .menu__logo-desktop {
     display: none;
@@ -2775,11 +2759,15 @@ ul li::marker {
   .menu__phone {
     display: inline-flex;
   }
-  .menu__search-form {
-    display: flex;
-  }
   .menu__contacts-title {
     margin-bottom: 8px;
+  }
+  .menu__title--development::after, .menu__title--services::after {
+    opacity: 1;
+    visibility: visible;
+  }
+  .menu__title--development + ul, .menu__title--services + ul {
+    display: none;
   }
 }
 .breadcrumbs__wrapper {
