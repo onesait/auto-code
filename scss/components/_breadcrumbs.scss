@@ -1,7 +1,6 @@
 .breadcrumbs {
   &__wrapper {
     @include fs-14;
-    display: flex;
     margin: 0;
     padding: 0 0 24px;
     font-weight: 500;
@@ -10,6 +9,8 @@
   }
 
   &__item {
+    display: inline;
+
     & + &::before {
       content: "/";
     }

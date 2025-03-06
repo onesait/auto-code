@@ -2,8 +2,20 @@
   margin: 0 -12px;
 }
 
+.slick-track {
+  .main-screen & {
+    display: flex;
+  }
+}
+
 .slick-slide {
   padding: 0 12px;
+
+  .main-screen & {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
 }
 
 .slick-dots {
@@ -39,8 +51,24 @@
   }
 
   .main-screen & {
-    li.slick-active button {
-      background-color: $white;
+    li {
+      &.slick-active button {
+        background-color: $white;
+      }
+
+      &:nth-child(2),
+      &:nth-child(5){
+        &.slick-active button {
+          background-color: $lviolet;
+        }
+      }
+
+      &:nth-child(3),
+      &:nth-child(4){
+        &.slick-active button {
+          background-color: #f3f3f3;
+        }
+      }
     }
 
     button {

@@ -1,10 +1,12 @@
 .site-header {
-  position: sticky;
+  position: fixed;
   z-index: 9;
   top: 0;
+  left: 0;
   transition: .4s ease;
+  width: 100%;
   padding: 24px 0;
-  background: linear-gradient(90deg, #6a5aff 40%, #a74ad1 100%);
+  background-color: transparent;
 
   &__wrapper {
     display: flex;
@@ -199,7 +201,7 @@
   }
 
   &.scrolled {
-    background: $white;
+    background-color: $white;
 
     .site-header {
       &__logo {
@@ -263,45 +265,60 @@
   }
 
   &--blog {
+    position: sticky;
     background: $white;
 
-    .site-header__logo {
-      path {
-        &:nth-of-type(1),
-        &:nth-of-type(2),
-        &:nth-of-type(3) {
-          fill: $dark;
+    .site-header {
+      &__logo {
+        path {
+          &:nth-of-type(1),
+          &:nth-of-type(2),
+          &:nth-of-type(3) {
+            fill: $dark;
+          }
         }
       }
-    }
 
-    .site-header__search-btn {
-      background: url("../img/global/search-24-lviolet.svg");
-    }
-
-    .site-header__messenger {
-      color: $lviolet;
-    }
-
-    .site-header__phone {
-      color: $lviolet;
-
-      &::before {
-        background: url("../img/global/phone-20-lviolet.svg") center/contain no-repeat;
+      &__logo-mobile {
+        path {
+          &:nth-of-type(1) {
+            fill: $dark;
+          }
+        }
       }
 
-      &:hover {
+      &__scroll-menu-btn {
         color: $dark;
       }
-    }
 
-    .site-header__discuss-btn {
-      border-color: $lviolet;
-      color: $lviolet;
+      &__search-btn {
+        background: url("../img/global/search-24-lviolet.svg");
+      }
 
-      &:hover {
-        background-color: $lviolet;
-        color: $white;
+      &__messenger {
+        color: $lviolet;
+      }
+
+      &__phone {
+        color: $lviolet;
+
+        &::before {
+          background: url("../img/global/phone-20-lviolet.svg") center/contain no-repeat;
+        }
+
+        &:hover {
+          color: $dark;
+        }
+      }
+
+      &__discuss-btn {
+        border-color: $lviolet;
+        color: $lviolet;
+
+        &:hover {
+          background-color: $lviolet;
+          color: $white;
+        }
       }
     }
   }

@@ -69,3 +69,24 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .single-blog {
+    &__details-wrapper {
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .single-blog {
+    &__details {
+      flex-wrap: wrap;
+      gap: 16px 24px;
+    }
+
+    &__details-item {
+      width: calc(50% - 12px);
+    }
+  }
+}

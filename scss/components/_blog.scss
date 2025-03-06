@@ -8,6 +8,10 @@
     list-style: none;
   }
 
+  &__category {
+    display: flex;
+  }
+
   &__category-link {
     @include fs-14;
     transition: .4s ease;
@@ -16,6 +20,7 @@
     min-width: 138px;
     padding: 8px 11px;
     font-weight: 500;
+    text-align: center;
     color: $lviolet;
 
     &:visited {
@@ -84,7 +89,7 @@
 
     .blog__item-img-wrapper {
       margin: 0;
-      width: 100%;
+      min-width: 100%;
     }
   }
 
@@ -144,7 +149,8 @@
   &__item-img-wrapper {
     position: relative;
     margin-left: auto;
-    width: 456px;
+    max-width: 456px;
+    min-width: 47%;
   }
 
   &__item-category {
@@ -224,6 +230,36 @@
         background-color: $lgray;
         color: $gray;
       }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .blog {
+    &__item-wrapper {
+      gap: 24px;
+      padding: 32px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .blog {
+    &__item-wrapper {
+      flex-direction: column-reverse;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .blog {
+    &__item-wrapper {
+      padding: 24px;
+    }
+
+    &__navigation {
+      gap: 16px;
+      margin-top: 24px;
     }
   }
 }

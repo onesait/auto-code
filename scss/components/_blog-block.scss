@@ -56,6 +56,10 @@
     font-weight: 700;
     color: $dark;
   }
+
+  &__item-link {
+    pointer-events: none;
+  }
 }
 
 @media (max-width: 1199px) {
