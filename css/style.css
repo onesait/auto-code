@@ -424,13 +424,14 @@ ul li::marker {
 .site-header__phone {
   display: inline-flex;
   align-items: center;
+  gap: 4px;
   font-weight: 700;
   color: #fff;
 }
 .site-header__phone::before {
   content: "";
   transition: 0.4s ease;
-  margin-right: 8px;
+  margin-right: 4px;
   width: 20px;
   height: 20px;
   background: url("../img/global/phone-20-white.svg") center/contain no-repeat;
@@ -695,6 +696,7 @@ ul li::marker {
     height: 20px;
   }
   .site-header__phone {
+    gap: 0;
     font-size: 0;
   }
   .site-header__phone::before {
@@ -1391,7 +1393,7 @@ ul li::marker {
 }
 @media (max-width: 767px) {
   .main-screen__item-wrapper {
-    padding: 24px 0 83px;
+    padding: 87px 0 83px;
   }
   .main-screen__item-inner {
     border-bottom: 0;
@@ -1405,6 +1407,11 @@ ul li::marker {
   }
   .main-screen__services {
     display: none;
+  }
+}
+@media (max-width: 575px) {
+  .main-screen__item-wrapper {
+    padding-top: 74px;
   }
 }
 .about__left {

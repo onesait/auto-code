@@ -206,7 +206,7 @@
 @media (max-width: 767px) {
   .main-screen {
     &__item-wrapper {
-      padding: 24px 0 83px;
+      padding: 87px 0 83px;
     }
 
     &__item-inner {
@@ -224,6 +224,14 @@
 
     &__services {
       display: none;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .main-screen {
+    &__item-wrapper {
+      padding-top: 74px;
     }
   }
 }

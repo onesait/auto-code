@@ -101,13 +101,14 @@
   &__phone {
     display: inline-flex;
     align-items: center;
+    gap: 4px;
     font-weight: 700;
     color: $white;
 
     &::before {
       content: "";
       transition: .4s ease;
-      margin-right: 8px;
+      margin-right: 4px;
       width: 20px;
       height: 20px;
       background: url("../img/global/phone-20-white.svg") center/contain no-repeat;
@@ -440,6 +441,7 @@
     }
 
     &__phone {
+      gap: 0;
       font-size: 0;
 
       &::before {
