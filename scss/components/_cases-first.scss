@@ -1,0 +1,11 @@
+.cases-first {
+  min-height: 348px;
+  background: linear-gradient(90deg, #5d9fff 0%, #b8dcff 100%);
+
+  &__top-text {
+    @include fs-24;
+    margin-bottom: 16px;
+    font-weight: 700;
+    color: $white;
+  }
+}

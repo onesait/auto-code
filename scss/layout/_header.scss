@@ -20,12 +20,11 @@
 
   &__scroll-menu-btn {
     @include sff;
-    @include fs-20;
+    @include fs-18;
     transition: .4s ease;
     border: 0;
     padding: 0;
-    font-weight: 800;
-    text-transform: uppercase;
+    font-weight: 500;
     color: $white;
 
     &:hover {
@@ -121,38 +120,6 @@
     &:hover {
       text-decoration: underline;
       color: $white;
-    }
-  }
-
-  &__menu-btn {
-    @include sff;
-    @include fs-20;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: .4s ease;
-    box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.1);
-    border-color: transparent;
-    border-radius: 0;
-    width: 92px;
-    height: 100vh;
-
-    backdrop-filter: blur(30px);
-    background: rgba(255, 255, 255, 0.15);
-
-    font-weight: 800;
-    text-transform: uppercase;
-    color: $white;
-
-    &:hover {
-      background: rgba(255, 255, 255, 0.15);
-      color: $white;
-    }
-
-    span {
-      transform: rotate(-90deg);
-      transition: .4s ease;
     }
   }
 
@@ -265,7 +232,8 @@
     }
   }
 
-  &--blog {
+  &--blog,
+  &--case {
     position: sticky;
     background: $white;
 
@@ -322,6 +290,15 @@
         }
       }
     }
+  }
+
+  &--case {
+    background: linear-gradient(90deg, #f3f3f3 0%, #f3f3f3 1%, #f3f3f3 26%);
+  }
+
+  &--cases {
+    position: sticky;
+    background: linear-gradient(90deg, #5d9fff 0%, #b8dcff 100%);
   }
 }
 

@@ -1,0 +1,16 @@
+.modal.lightbox {
+  .carousel-control {
+    min-width: auto;
+
+    &:hover,
+    &:focus {
+      box-shadow: none;
+      border-color: transparent;
+      background: transparent;
+    }
+  }
+
+  .carousel-item .ratio {
+    background: transparent !important;
+  }
+}

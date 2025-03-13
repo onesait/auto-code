@@ -1,13 +1,12 @@
 .modal-close-btn {
   &--menu {
     @include sff;
-    @include fs-20;
+    @include fs-18;
 
     border: 0;
     border-radius: 0;
     padding: 0;
-    font-weight: 800;
-    text-transform: uppercase;
+    font-weight: 500;
     color: $dark;
 
     &:hover {

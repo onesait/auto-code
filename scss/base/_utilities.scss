@@ -22,6 +22,18 @@
   background-color: $ldark;
 }
 
+.bgc-lgray2 {
+  background-color: $lgray2;
+}
+
+.fs-42 {
+  @include fs-42;
+}
+
+.text-violet {
+  color: $violet;
+}
+
 .details-link {
   display: inline-flex;
   align-items: center;
@@ -68,10 +80,6 @@
       background: url("../img/global/arrow-right-16-white.svg") center/contain no-repeat;
     }
   }
-}
-
-.text-violet {
-  color: $violet;
 }
 
 @media (min-width: 1875px) {

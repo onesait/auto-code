@@ -89,6 +89,18 @@ button,
     }
   }
 
+  &--lviolet {
+    border-color: $lviolet;
+    background-color: $lviolet;
+    color: $white;
+
+    &:hover {
+      border-color: $violet;
+      background-color: $violet;
+      color: $white;
+    }
+  }
+
   &--white {
     background-color: $white;
     color: $lviolet;

@@ -1,0 +1,160 @@
+.cases-page {
+  &__category-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 48px;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__category-item {
+    display: flex;
+  }
+
+  &__category-link {
+    @include fs-14;
+    transition: .4s ease;
+    border: 3px solid $lviolet;
+    border-radius: 8px;
+    padding: 8px 13px;
+    font-weight: 500;
+    color: $lviolet;
+
+    &:hover {
+      background-color: $lviolet;
+      color: $white;
+    }
+
+    &--current {
+      border-color: $lgray;
+      background-color: $lgray;
+      color: $gray;
+
+      &:hover {
+        background-color: $lgray;
+        color: $gray;
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 48px;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item-wrapper {
+    display: flex;
+    transition: .4s ease;
+    box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.1);
+    border: 3px solid $white;
+    border-radius: 8px;
+    width: 100%;
+    padding: 29px;
+
+    &:hover {
+      box-shadow: none;
+      border-color: $lgray;
+
+      .cases-page {
+        &__item-btn {
+          background-color: $lviolet;
+          color: $white;
+        }
+      }
+    }
+  }
+
+  &__item-title {
+    @include fs-24;
+    margin-bottom: 16px;
+    font-weight: 700;
+    color: $dark;
+  }
+
+  &__item-text {
+    margin-bottom: 24px;
+    color: $dark;
+  }
+
+  &__item-img-wrapper {
+    border-radius: 8px;
+    padding: 32px;
+    background-color: $lgray;
+  }
+
+  &__item-img {
+    border-radius: 8px;
+    width: 100%;
+  }
+
+  &__item-btn {
+    &--mobile {
+      display: none;
+      margin-top: 24px;
+    }
+  }
+
+  &__btn {
+    gap: 8px;
+    margin: 0 auto;
+
+    &::before {
+      content: "";
+      width: 20px;
+      height: 20px;
+      background: url("../img/global/refresh-20-white.svg");
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .cases-page {
+    &__item-btn {
+      &--desktop {
+        display: none;
+      }
+
+      &--mobile {
+        display: inline-flex;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .cases-page {
+    &__category-list {
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+
+    &__list {
+      margin-bottom: 24px;
+    }
+
+    &__item-wrapper {
+      padding: 24px;
+    }
+
+    &__item-title {
+      margin-bottom: 8px;
+    }
+
+    &__item-text {
+      margin-bottom: 16px;
+    }
+
+    &__item-img-wrapper {
+      padding: 16px;
+    }
+
+    &__item-img {
+      height: 140px;
+    }
+  }
+}

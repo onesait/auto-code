@@ -15,4 +15,18 @@
       content: "/";
     }
   }
+
+  &--cases {
+    background: linear-gradient(90deg, #5d9fff 0%, #b8dcff 100%);
+
+    .breadcrumbs {
+      &__wrapper {
+        color: $lgray;
+      }
+    }
+  }
+
+  &--case {
+    background: linear-gradient(90deg, #f3f3f3 0%, #f3f3f3 1%, #f3f3f3 26%);
+  }
 }

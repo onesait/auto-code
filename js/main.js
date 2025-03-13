@@ -22,16 +22,28 @@ searchBtns.forEach(btn => {
 const seoText = document.querySelector(".seo-block__text");
 const seoBtn = document.querySelector(".seo-block__btn");
 
-if (seoBtn && seoText) {
-	seoBtn.addEventListener("click", () => {
-		const isExpanded = seoText.classList.toggle("show");
-		seoBtn.classList.toggle("active");
+const descriptionStagesText = document.querySelector(".case-description-stages__text");
+const descriptionStagesBtn = document.querySelector(".case-description-stages__btn");
 
-		seoBtn.setAttribute("aria-expanded", isExpanded);
-		seoBtn.textContent = isExpanded ? "Скрыть" : "Читать еще";
+function initToggle(text, btn) {
+	if (text && btn) {
+		toggleVisibleText(text, btn);
+	}
+}
+
+initToggle(seoText, seoBtn);
+initToggle(descriptionStagesText, descriptionStagesBtn);
+
+function toggleVisibleText(text, btn) {
+	btn.addEventListener("click", () => {
+		const isExpanded = text.classList.toggle("show");
+		btn.classList.toggle("active");
+
+		btn.setAttribute("aria-expanded", isExpanded);
+		btn.textContent = isExpanded ? "Скрыть" : "Читать еще";
 	});
 
-	seoBtn.setAttribute("aria-expanded", false);
+	btn.setAttribute("aria-expanded", false);
 }
 
 
