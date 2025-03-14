@@ -233,7 +233,9 @@
   }
 
   &--blog,
-  &--case {
+  &--cases,
+  &--case,
+  &--contacts {
     position: sticky;
     background: $white;
 
@@ -298,7 +300,12 @@
 
   &--cases {
     position: sticky;
-    background: linear-gradient(90deg, #5d9fff 0%, #b8dcff 100%);
+    background: linear-gradient(90deg, #eff3fc 0%, #d9e6f9 50%, #f2e7f7 100%);
+  }
+
+  &--contacts {
+    position: sticky;
+    background: linear-gradient(90deg, #e9defa 0%, #fbfcdb 100%);
   }
 }
 

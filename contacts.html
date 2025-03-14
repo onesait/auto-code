@@ -17,7 +17,7 @@
 </head>
 <body>
 <div class="page">
-    <header class="site-header site-header--cases">
+    <header class="site-header site-header--contacts">
         <div class="container">
             <div class="site-header__wrapper">
                 <a href="/" class="site-header__logo-link" rel="home">
@@ -46,21 +46,21 @@
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M15.0059 14.8387L16.6923 17.5365L18.7792 20.8749L26.9839 34H36.0005L24.0371 14.3316L35.5534 0L26.6104 0L15.0059 14.8387Z" fill="#6924FF" />
                     </svg>
                 </a>
-                <button type="button" class="site-header__scroll-menu-btn" data-bs-toggle="modal" data-bs-target="#menuModal" aria-label="Меню">
+                <button type="button" class="site-header__scroll-menu-btn" data-bs-toggle="modal" data-bs-target="#menuModal" aria-label="Открыть меню">
                     Меню
                 </button>
                 <div class="site-header__center">
                     <button type="button" class="site-header__search-btn search-btn" aria-label="Поиск"></button>
                     <div class="site-header__messengers">
-                        <a href="#" class="site-header__messenger" target="_blank">
+                        <a href="#" class="site-header__messenger" target="_blank" aria-label="WhatsApp">
                             WhatsApp
-                            <img src="img/global/whatsapp-24-circle-lviolet.svg" alt="" class="site-header__messenger-img">
-                            <img src="img/global/whatsapp-24-circle-ldark.svg" alt="" class="site-header__messenger-img site-header__messenger-img--hover">
+                            <img src="img/global/whatsapp-24-circle-lviolet.svg" alt="" class="site-header__messenger-img" width="24" height="24">
+                            <img src="img/global/whatsapp-24-circle-ldark.svg" alt="" class="site-header__messenger-img site-header__messenger-img--hover" width="24" height="24">
                         </a>
-                        <a href="#" class="site-header__messenger" target="_blank">
+                        <a href="#" class="site-header__messenger" target="_blank" aria-label="Telegram">
                             Telegram
-                            <img src="img/global/telegram-24-circle-lviolet.svg" alt="" class="site-header__messenger-img">
-                            <img src="img/global/telegram-24-circle-ldark.svg" alt="" class="site-header__messenger-img site-header__messenger-img--hover">
+                            <img src="img/global/telegram-24-circle-lviolet.svg" alt="" class="site-header__messenger-img" width="24" height="24">
+                            <img src="img/global/telegram-24-circle-ldark.svg" alt="" class="site-header__messenger-img site-header__messenger-img--hover" width="24" height="24">
                         </a>
                     </div>
                     <a href="tel:+79111529044" class="site-header__phone">
@@ -82,135 +82,206 @@
         </div>
     </header>
     <main class="site-main">
-        <nav class="breadcrumbs breadcrumbs--cases">
+        <nav class="breadcrumbs breadcrumbs--contacts">
             <div class="container">
                 <ol class="breadcrumbs__wrapper">
                     <li class="breadcrumbs__item">
                         <a href="/" class="breadcrumbs__link">Главная</a>
                     </li>
                     <li class="breadcrumbs__item">
-                        <span class="breadcrumbs__current" >Наши кейсы</span>
+                        <span class="breadcrumbs__current" aria-current="page">Контакты</span>
                     </li>
                 </ol>
             </div>
         </nav>
-        <section class="cases-first pb-96">
+        <section class="contacts-first pb-96">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-6">
-                        <h1>Наши кейсы</h1>
+                        <h1>Контакты</h1>
                     </div>
                     <div class="col-xl-6">
-                        <div class="cases-first__top-text">Расскажите о проекте — поможем решить вашу задачу и проконсультируем по всем вопросам</div>
-                        <div class="cases-first__bottom-text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</div>
+                        <div class="contacts-first__top-text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного</div>
+                        <div class="contacts-first__bottom-text">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="cases-page ptb-96">
-            <div class="container d-flex flex-column">
-                <ul class="cases-page__category-list">
-                    <li class="cases-page__category-item">
-                        <a href="#" class="cases-page__category-link">Все кейсы</a>
-                    </li>
-                    <li class="cases-page__category-item">
-                        <a href="#" class="cases-page__category-link cases-page__category-link--current">Корпоративные сайты</a>
-                    </li>
-                    <li class="cases-page__category-item">
-                        <a href="#" class="cases-page__category-link">Интернет-магазины</a>
-                    </li>
-                    <li class="cases-page__category-item">
-                        <a href="#" class="cases-page__category-link">Интеграция с 1С | Мой склад</a>
-                    </li>
-                </ul>
-                <ul class="cases-page__list">
-                    <li class="cases-page__item">
-                        <a href="#" class="cases-page__item-wrapper">
-                            <div class="row align-items-center">
-                                <div class="col-xl-6 pe-xxl-4">
-                                    <div class="cases-page__item-content">
-                                        <div class="cases-page__item-title">Расширение «Управление проектами и задачами»
-                                        </div>
-                                        <div class="cases-page__item-text">Мы разработали готовое решение по
-                                            автоматизации
-                                            малого и среднего бизнеса, которое предназначено для организации
-                                            процессов
-                                            системного учета выполнения работ в сфере оказания профессиональных
-                                            услуг
-                                            для конфигурации 1С “Управление нашей фирмой”, которое предназначено для
-                                            организации процессов системного учета выполнения работ в сфере оказания
-                                        </div>
-                                        <div class="cases-page__item-btn cases-page__item-btn--desktop button button--violet">Подробнее</div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-6 ps-xxl-4">
-                                    <div class="cases-page__item-img-wrapper">
-                                        <img src="img/home-page/cases-1.png" alt="" class="cases-page__item-img" width="681" height="288" loading="lazy">
-                                    </div>
-                                    <div class="cases-page__item-btn cases-page__item-btn--mobile button button--violet">Подробнее</div>
-                                </div>
+        <section class="ptb-96">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-7 col-lg-6 mb-lg-0 mb-sm-5 mb-4">
+                        <div class="contacts-content">
+                            <div class="contacts-content__item">
+                                <div class="contacts-content__item-title contacts-content__item-title--link">Позвонить нам</div>
+                                <a href="tel:+79111529044" class="contacts-content__item-link">+7 (911) 152-90-44</a>
                             </div>
-                        </a>
-                    </li>
-                    <li class="cases-page__item">
-                        <a href="#" class="cases-page__item-wrapper">
-                            <div class="row align-items-center">
-                                <div class="col-xl-6 pe-xxl-4">
-                                    <div class="cases-page__item-content">
-                                        <div class="cases-page__item-title">Расширение «Управление проектами и задачами» 2
-                                        </div>
-                                        <div class="cases-page__item-text">Мы разработали готовое решение по
-                                            автоматизации
-                                            малого и среднего бизнеса, которое предназначено для организации
-                                            процессов
-                                            системного учета выполнения работ в сфере оказания профессиональных
-                                            услуг
-                                            для конфигурации 1С “Управление нашей фирмой”, которое предназначено для
-                                            организации процессов системного учета выполнения работ в сфере оказания
-                                        </div>
-                                        <div class="cases-page__item-btn cases-page__item-btn--desktop button button--violet">Подробнее</div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-6 ps-xxl-4">
-                                    <div class="cases-page__item-img-wrapper">
-                                        <img src="img/home-page/cases-1.png" alt="" class="cases-page__item-img" width="681" height="288" loading="lazy">
-                                    </div>
-                                    <div class="cases-page__item-btn cases-page__item-btn--mobile button button--violet">Подробнее</div>
-                                </div>
+                            <div class="contacts-content__item">
+                                <div class="contacts-content__item-title contacts-content__item-title--link">Написать нам</div>
+                                <a href="mailto:automation-code@yandex.ru" class="contacts-content__item-link">automation-code@yandex.ru</a>
                             </div>
-                        </a>
-                    </li>
-                    <li class="cases-page__item">
-                        <a href="#" class="cases-page__item-wrapper">
-                            <div class="row align-items-center">
-                                <div class="col-xl-6 pe-xxl-4">
-                                    <div class="cases-page__item-content">
-                                        <div class="cases-page__item-title">Расширение «Управление проектами и задачами» 2
-                                        </div>
-                                        <div class="cases-page__item-text">Мы разработали готовое решение по
-                                            автоматизации
-                                            малого и среднего бизнеса, которое предназначено для организации
-                                            процессов
-                                            системного учета выполнения работ в сфере оказания профессиональных
-                                            услуг
-                                            для конфигурации 1С “Управление нашей фирмой”, которое предназначено для
-                                            организации процессов системного учета выполнения работ в сфере оказания
-                                        </div>
-                                        <div class="cases-page__item-btn cases-page__item-btn--desktop button button--violet">Подробнее</div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-6 ps-xxl-4">
-                                    <div class="cases-page__item-img-wrapper">
-                                        <img src="img/home-page/cases-1.png" alt="" class="cases-page__item-img" width="681" height="288" loading="lazy">
-                                    </div>
-                                    <div class="cases-page__item-btn cases-page__item-btn--mobile button button--violet">Подробнее</div>
-                                </div>
+                            <div class="contacts-content__item">
+                                <div class="contacts-content__item-title">Адрес компании</div>
+                                <div class="contacts-content__item-text">163069, Архангельская область, г. Архангельс, ул. Приморская,дом 5, офис 307</div>
                             </div>
-                        </a>
-                    </li>
-                </ul>
-                <button class="cases-page__btn button button--lviolet">Показать еще</button>
+                            <div class="contacts-content__item">
+                                <div class="contacts-content__item-title">Время работы</div>
+                                <div class="contacts-content__item-text">Пн - Пт: с 8:00 до 17:00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-lg-6">
+                        <div class="contacts-form">
+                            <h2 class="contacts-form__title">У вас остались вопросы?</h2>
+                            <div class="contacts-form__form-text">Оставьте заявку, и мы скоро свяжемся с вами. Или напишите
+                                нам в
+                                <a href="#" class="contacts-form__form-messenger" target="_blank">Telegram</a>, <a href="#"
+                                                                                                                class="contacts-form__form-messenger"
+                                                                                                                target="_blank">WhatsApp</a>
+                            </div>
+                            <form action="#" class="contacts-form__form">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <input type="text" class="contacts-form__form-input" placeholder="Ваше имя*">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input type="tel" class="contacts-form__form-input" placeholder="Ваше телефон*">
+                                    </div>
+                                </div>
+                                <textarea class="contacts-form__form-textarea" placeholder="Комментарий"></textarea>
+                                <button type="submit" class="contacts-form__form-btn button button--lviolet">Отправить</button>
+                                <div class="contacts-form__form-policy">Нажимая на кнопку, Вы соглашаетесь с <a
+                                        href="#">политикой
+                                    конфиденциальности</a></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
+        <section class="contacts-socials pb-96">
+            <div class="container">
+                <h2 class="contacts-socials__title mb-lg-5">Наши социальные сети</h2>
+                <div class="contacts-socials__list row">
+                    <div class="contacts-socials__item col-xl-3 col-lg-4 col-md-6 mb-4">
+                        <a href="#" class="contacts-socials__item-wrapper" target="_blank">
+                            <div class="contacts-socials__item-header">
+                                <img src="img/contacts-page/vkontakte.svg" alt="" class="contacts-socials__item-icon">
+                                <div class="contacts-socials__item-title">Вконтакте</div>
+                            </div>
+                            <div class="contacts-socials__item-description">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке</div>
+                            <div class="contacts-socials__item-link">Перейти</div>
+                        </a>
+                    </div>
+                    <div class="contacts-socials__item col-xl-3 col-lg-4 col-md-6 mb-4">
+                        <a href="#" class="contacts-socials__item-wrapper" target="_blank">
+                            <div class="contacts-socials__item-header">
+                                <img src="img/contacts-page/telegram.svg" alt="" class="contacts-socials__item-icon">
+                                <div class="contacts-socials__item-title">Telegram</div>
+                            </div>
+                            <div class="contacts-socials__item-description">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке</div>
+                            <div class="contacts-socials__item-link">Перейти</div>
+                        </a>
+                    </div>
+                    <div class="contacts-socials__item col-xl-3 col-lg-4 col-md-6 mb-4">
+                        <a href="#" class="contacts-socials__item-wrapper" target="_blank">
+                            <div class="contacts-socials__item-header">
+                                <img src="img/contacts-page/youtube.svg" alt="" class="contacts-socials__item-icon">
+                                <div class="contacts-socials__item-title">YouTube</div>
+                            </div>
+                            <div class="contacts-socials__item-description">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке</div>
+                            <div class="contacts-socials__item-link">Перейти</div>
+                        </a>
+                    </div>
+                    <div class="contacts-socials__item col-xl-3 col-lg-4 col-md-6 mb-4">
+                        <a href="#" class="contacts-socials__item-wrapper" target="_blank">
+                            <div class="contacts-socials__item-header">
+                                <img src="img/contacts-page/dzen.svg" alt="" class="contacts-socials__item-icon">
+                                <div class="contacts-socials__item-title">Дзен</div>
+                            </div>
+                            <div class="contacts-socials__item-description">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке</div>
+                            <div class="contacts-socials__item-link">Перейти</div>
+                        </a>
+                    </div>
+                    <div class="contacts-socials__item col-xl-3 col-lg-4 col-md-6 mb-4">
+                        <a href="#" class="contacts-socials__item-wrapper" target="_blank">
+                            <div class="contacts-socials__item-header">
+                                <img src="img/contacts-page/odnoklassniki.svg" alt="" class="contacts-socials__item-icon">
+                                <div class="contacts-socials__item-title">Одноклассники</div>
+                            </div>
+                            <div class="contacts-socials__item-description">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке</div>
+                            <div class="contacts-socials__item-link">Перейти</div>
+                        </a>
+                    </div>
+                    <div class="contacts-socials__item col-xl-3 col-lg-4 col-md-6 mb-4">
+                        <a href="#" class="contacts-socials__item-wrapper" target="_blank">
+                            <div class="contacts-socials__item-header">
+                                <img src="img/contacts-page/behance.svg" alt="" class="contacts-socials__item-icon">
+                                <div class="contacts-socials__item-title">Behance</div>
+                            </div>
+                            <div class="contacts-socials__item-description">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке</div>
+                            <div class="contacts-socials__item-link">Перейти</div>
+                        </a>
+                    </div>
+                    <div class="contacts-socials__item col-xl-3 col-lg-4 col-md-6 mb-4">
+                        <a href="#" class="contacts-socials__item-wrapper" target="_blank">
+                            <div class="contacts-socials__item-header">
+                                <img src="img/contacts-page/dprofile.svg" alt="" class="contacts-socials__item-icon">
+                                <div class="contacts-socials__item-title">Dprofile</div>
+                            </div>
+                            <div class="contacts-socials__item-description">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке</div>
+                            <div class="contacts-socials__item-link">Перейти</div>
+                        </a>
+                    </div>
+                    <div class="contacts-socials__item col-xl-3 col-lg-4 col-md-6 mb-4">
+                        <a href="#" class="contacts-socials__item-wrapper" target="_blank">
+                            <div class="contacts-socials__item-header">
+                                <img src="img/contacts-page/vcru.svg" alt="" class="contacts-socials__item-icon">
+                                <div class="contacts-socials__item-title">Vc.ru</div>
+                            </div>
+                            <div class="contacts-socials__item-description">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке</div>
+                            <div class="contacts-socials__item-link">Перейти</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contacts-map pb-96">
+            <div class="container">
+                <div id="map" class="contacts-map__wrapper" style="height: 537px;"></div>
+            </div>
+
+            <script src="https://api-maps.yandex.ru/2.1/?apikey=d7a4dc56-12e1-4264-855f-2117787623a8&lang=ru_RU"></script>
+            <script>
+              ymaps.ready(init);
+
+              function init() {
+                var myMap = new ymaps.Map("map", {
+                    center: [64.581819, 40.472194],
+                    zoom: 17,
+                    controls: ['smallMapDefaultSet']
+                    //controls: ['routePanelControl']
+                  }),
+                  MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+                    '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+                  ),
+
+                  myPlacemark = new ymaps.Placemark([64.581819, 40.472194], {
+                    hintContent: '',
+                    balloonContent: '163069, Архангельская область, г. Архангельс, ул. Приморская,дом 5, офис 307'
+                  }, {
+                    iconLayout: 'default#image',
+                    iconImageHref: 'img/contacts-page/flag.svg',
+                    iconImageSize: [108, 125],
+                    iconImageOffset: [-54, -120]
+                  });
+
+                myMap.geoObjects
+                  .add(myPlacemark)
+
+                // myMap.behaviors.disable('scrollZoom');
+              };
+            </script>
         </section>
     </main>
     <footer class="site-footer">

@@ -1,0 +1,74 @@
+.contacts-socials {
+  &__title {
+    @include fs-32;
+  }
+
+  &__item-wrapper {
+    display: flex;
+    flex-direction: column;
+    transition: .4s ease;
+    border: 3px solid $lgray;
+    border-radius: 8px;
+    height: 100%;
+    padding: 32px;
+
+    &:hover {
+      box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.1);
+      border-color: transparent;
+
+      .contacts-socials {
+        &__item-link {
+          color: $lviolet;
+
+          &::after {
+            background: url("../img/global/arrow-right-20-lviolet.svg") center/contain no-repeat;
+          }
+        }
+      }
+    }
+  }
+
+  &__item-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  &__item-title {
+    font-weight: 600;
+    color: $dark;
+  }
+
+  &__item-description {
+    @include fs-14;
+    margin-bottom: 16px;
+    font-weight: 500;
+    color: $gray;
+  }
+
+  &__item-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: .4s ease;
+    margin: auto 0 0 auto;
+    font-weight: 700;
+    color: $dark;
+
+    &::after {
+      content: "";
+      width: 16px;
+      height: 16px;
+      background: url("../img/global/arrow-right-16-dark.svg");
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .contacts-socials {
+    &__item-wrapper {
+      padding: 24px;
+    }
+  }
+}
