@@ -1,14 +1,22 @@
 .single-blog {
   &__details-wrapper {
     display: flex;
-    align-items: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
     gap: 24px;
     margin-bottom: 24px;
   }
 
   &__details {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    gap: 16px 24px;
+  }
+
+  &__details-item {
+    display: flex;
+    align-items: center;
+    gap: 3px;
   }
 
   &__details-title {
@@ -16,7 +24,6 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    margin-bottom: 4px;
     font-weight: 500;
     color: $gray;
 
@@ -41,7 +48,6 @@
 
   &__details-content {
     @include fs-14;
-    padding-left: 28px;
     font-weight: 500;
   }
 
@@ -70,23 +76,11 @@
   }
 }
 
-@media (max-width: 767px) {
-  .single-blog {
-    &__details-wrapper {
-      flex-direction: column;
-    }
-  }
-}
-
 @media (max-width: 575px) {
   .single-blog {
     &__details {
       flex-wrap: wrap;
-      gap: 16px 24px;
-    }
-
-    &__details-item {
-      width: calc(50% - 12px);
+      gap: 8px 24px;
     }
   }
 }

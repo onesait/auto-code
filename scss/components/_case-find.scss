@@ -1,0 +1,43 @@
+.case-find {
+  &__item-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    transition: .4s ease;
+    border: 3px solid $lgray;
+    border-radius: 8px;
+    padding: 32px;
+
+    &:hover {
+      box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.1);
+      border-color: $white;
+
+      .case-find__item-link {
+        color: $lviolet;
+
+        &::after {
+          background: url("../img/global/arrow-right-20-lviolet.svg") center/contain no-repeat;
+        }
+      }
+    }
+  }
+
+  &__item-title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__item-title {
+    color: $dark;
+  }
+}
+
+@media (max-width: 575px) {
+  .case-find {
+    &__item-wrapper {
+      padding: 24px;
+    }
+  }
+}

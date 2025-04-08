@@ -6,10 +6,6 @@
     padding: 96px;
   }
 
-  &__title {
-    @include fs-42;
-  }
-
   &__nav {
     display: flex;
     gap: 24px;

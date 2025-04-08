@@ -1,64 +1,12 @@
 .case-first {
   background: linear-gradient(90deg, #f3f3f3 0%, #f3f3f3 1%, #f3f3f3 26%);
 
-  &__documents-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
-    transition: .4s ease;
-    backdrop-filter: blur(30px);
-    box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    height: 100%;
-    padding: 24px;
-    background-color: rgba(255, 255, 255, 0.15);
-
-    &:hover {
-      backdrop-filter: none;
-      box-shadow: none;
-      background-color: $white;
-
-      .case-first__documents-icon {
-        background-color: $lviolet;
-
-        &::before {
-          background: url("../img/global/download-20-white.svg");
-        }
-      }
-    }
+  &__text {
+    margin-bottom: 32px;
   }
 
-  &__documents-name {
-    @include fs-20;
-    color: $dark;
-  }
-
-  &__documents-icon {
-    position: relative;
-    transition: .4s ease;
-    border: 3px solid $lviolet;
-    border-radius: 8px;
-    min-width: 90px;
-    height: 42px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 20px;
-      height: 20px;
-      background: url("../img/global/download-20-lviolet.svg");
-    }
-  }
-}
-
-@media (max-width: 575px) {
-  .case-first {
-    &__documents-wrapper {
-      padding: 16px;
-    }
+  &__img {
+    margin-top: auto;
+    max-width: 100%;
   }
 }

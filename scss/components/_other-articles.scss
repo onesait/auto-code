@@ -8,7 +8,7 @@
   &__list {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 48px;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -50,15 +50,6 @@
     object-fit: cover;
   }
 
-  &__item-date {
-    display: inline-block;
-    margin-bottom: 16px;
-    border-radius: 4px;
-    padding: 8px 16px;
-    background-color: $lgray;
-    color: $dark;
-  }
-
   &__item-title {
     @include fs-24;
     margin-bottom: 16px;
@@ -71,6 +62,7 @@
   .other-articles {
     &__list {
       flex-direction: row;
+      gap: 24px;
     }
 
     &__item {
@@ -83,6 +75,7 @@
   .other-articles {
     &__list {
       flex-direction: column;
+      gap: 48px;
     }
 
     &__item {
@@ -93,6 +86,10 @@
 
 @media (max-width: 575px) {
   .other-articles {
+    &__list {
+      gap: 32px;
+    }
+
     &__item-img-wrapper {
       height: 220px;
     }
