@@ -2,8 +2,6 @@
   &__wrapper {
     position: relative;
     overflow: hidden;
-    border-radius: 8px;
-    padding: 96px 6.2vw;
     background-color: $ldark;
 
     &::before {
@@ -75,14 +73,6 @@
   }
 }
 
-@media (max-width: 1199px) {
-  .main-form {
-    &__wrapper {
-      padding: 48px;
-    }
-  }
-}
-
 @media (max-width: 991px) {
   .main-form {
     &__wrapper {
@@ -120,20 +110,8 @@
   }
 }
 
-@media (max-width: 767px) {
-  .main-form {
-    &__wrapper {
-      padding: 36px;
-    }
-  }
-}
-
 @media (max-width: 575px) {
   .main-form {
-    &__wrapper {
-      padding: 24px;
-    }
-
     &__form-input,
     &__form-textarea{
       margin-bottom: 16px;

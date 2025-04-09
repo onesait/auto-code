@@ -121,8 +121,10 @@
 
   &__socials {
     display: flex;
+    flex-wrap: wrap;
     gap: 24px;
     margin-bottom: 16px;
+    max-width: 264px;
   }
 
   &__socials-item {
